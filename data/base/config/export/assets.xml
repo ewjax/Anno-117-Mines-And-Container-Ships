@@ -1,0 +1,476 @@
+<ModOps>
+
+    <!-- first GUID for this mod  2000101300 -->
+
+    <!--
+
+    GUID Registry:
+
+
+    -->
+
+    <!-- Asset ModOp workaround: use it once before you use asset modops 
+    <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
+    -->
+
+    <!--
+    use Type="Replace" or "Merge" and specify the path to the 
+    Object you want to modify, then put the modified Object in the ModOp body, 
+    you can modify any field of the Object this way, and you can also add 
+    new fields if needed, just make sure the GUID of the Object is correct 
+    and matches the one in the game data, otherwise it will create a new 
+    Object instead of modifying the existing one
+
+    Old style vs new style:
+    <ModOp Type="Merge" GUID="5473" Path="Values/Object">
+    <ModOp Merge="@5473/Object">
+        <Object>
+            <Name>New Name</Name>
+        </Object>
+    </ModOp>
+
+    -->
+
+
+    <!--    
+    Assets do not need to reside inside a ModOp, they can be defined outside any ModOp
+    -->
+
+    <Asset>
+        <BaseAssetGUID>37222</BaseAssetGUID>
+        <Values>
+            <Standard>
+                <GUID>2000101300</GUID>
+                <Name>Container Ship - Pente</Name>
+                <InfoDescription>2000101300</InfoDescription>
+            </Standard>
+            <Unit>
+                <Actor>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </Actor>
+            </Unit>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </OnSelection>
+            </Selection>
+            <Locked>
+                <DefaultLockedState>0</DefaultLockedState>
+            </Locked>
+
+            <ShipModuleOwner>
+                <MaximumModificationCount>4</MaximumModificationCount>
+                <ShipModulesConfig>
+                    <Mast>
+                        <ModuleAsset>39574</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </Mast>
+                    <Rows>
+                        <ModuleAsset>39575</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Rows>
+                    <AdditionalHull>
+                        <ModuleAsset>39576</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </AdditionalHull>
+                    <Archers>
+                        <ModuleAsset>39577</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Archers>
+                    <Scorpion>
+                        <ModuleAsset>39578</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Scorpion>
+                    <Catapult>
+                        <ModuleAsset>39579</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Catapult>
+                    <Cosmetic>
+                        <ModuleAsset>39587</ModuleAsset>
+                    </Cosmetic>
+                </ShipModulesConfig>
+                <UseAssetIcon>1</UseAssetIcon>
+            </ShipModuleOwner>
+            <Health>
+                <BaseHealth>750</BaseHealth>
+            </Health>
+
+            <ItemContainer>
+                <SlotCount>6</SlotCount>
+            </ItemContainer>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <BaseAssetGUID>37223</BaseAssetGUID>
+        <Values>
+            <Standard>
+                <GUID>2000101301</GUID>
+                <Name>Container Ship - Trireme</Name>
+                <InfoDescription>2000101301</InfoDescription>
+            </Standard>
+            <Unit>
+                <Actor>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </Actor>
+            </Unit>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </OnSelection>
+            </Selection>
+            <Locked>
+                <DefaultLockedState>0</DefaultLockedState>
+            </Locked>
+
+            <ShipModuleOwner>
+                <MaximumModificationCount>4</MaximumModificationCount>
+                <ShipModulesConfig>
+                    <Mast>
+                        <ModuleAsset>39574</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </Mast>
+                    <Rows>
+                        <ModuleAsset>39575</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Rows>
+                    <AdditionalHull>
+                        <ModuleAsset>39576</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </AdditionalHull>
+                    <Archers>
+                        <ModuleAsset>39577</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Archers>
+                    <Scorpion>
+                        <ModuleAsset>39578</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Scorpion>
+                    <Catapult>
+                        <ModuleAsset>39579</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Catapult>
+                    <Cosmetic>
+                        <ModuleAsset>39587</ModuleAsset>
+                    </Cosmetic>
+                </ShipModulesConfig>
+                <UseAssetIcon>1</UseAssetIcon>
+            </ShipModuleOwner>
+            <Health>
+                <BaseHealth>1875</BaseHealth>
+            </Health>
+
+            <ItemContainer>
+                <SlotCount>8</SlotCount>
+            </ItemContainer>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <BaseAssetGUID>37224</BaseAssetGUID>
+        <Values>
+            <Standard>
+                <GUID>2000101302</GUID>
+                <Name>Container Ship - Quinquereme</Name>
+                <InfoDescription>2000101302</InfoDescription>
+            </Standard>
+            <Unit>
+                <Actor>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </Actor>
+            </Unit>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                </OnSelection>
+            </Selection>
+            <Locked>
+                <DefaultLockedState>0</DefaultLockedState>
+            </Locked>
+
+            <ShipModuleOwner>
+                <MaximumModificationCount>4</MaximumModificationCount>
+                <ShipModulesConfig>
+                    <Mast>
+                        <ModuleAsset>39574</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </Mast>
+                    <Rows>
+                        <ModuleAsset>39575</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Rows>
+                    <AdditionalHull>
+                        <ModuleAsset>39576</ModuleAsset>
+                        <MaximumModuleCount>2</MaximumModuleCount>
+                    </AdditionalHull>
+                    <Archers>
+                        <ModuleAsset>39577</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Archers>
+                    <Scorpion>
+                        <ModuleAsset>39578</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Scorpion>
+                    <Catapult>
+                        <ModuleAsset>39579</ModuleAsset>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Catapult>
+                    <Cosmetic>
+                        <ModuleAsset>39587</ModuleAsset>
+                    </Cosmetic>
+                </ShipModulesConfig>
+                <UseAssetIcon>1</UseAssetIcon>
+            </ShipModuleOwner>
+            <Health>
+                <BaseHealth>3000</BaseHealth>
+            </Health>
+
+            <ItemContainer>
+                <SlotCount>10</SlotCount>
+            </ItemContainer>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <BaseAssetGUID>37224</BaseAssetGUID>
+        <Values>
+            <Standard>
+                <GUID>2023030000</GUID>
+                <Name>Roman PleasureBoat ProMax</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/ship/icon_3d_ship_pleasure.png</IconFilename>
+                <InfoDescription>2023030001</InfoDescription>
+            </Standard>
+            <Unit>
+                <Actor>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <SingleUnitActor />
+                    </Values>
+                </Actor>
+            </Unit>
+            <Object>
+                <Variations>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Filename>data/base/graphics/roman/units/ships/imperial_pleasure_boat/imperial_pleasure_boat_01.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+            </Selection>
+            <Movement />
+            <Mesh />
+            <Buffable>
+                <DefaultBuffGUID>2023030098</DefaultBuffGUID><!-- 默认加载货运之王buff-->
+            </Buffable>
+            <ShipModuleOwner>
+                <MaximumModificationCount>4</MaximumModificationCount><!-- 最多4个模组栏位-->
+                <ShipModulesConfig>
+                    <Mast>
+                        <MaximumModuleCount>2</MaximumModuleCount><!-- 最大【桅杆】数 -->
+                    </Mast>
+                    <Rows>
+                        <MaximumModuleCount>0</MaximumModuleCount><!-- 最大【船桨】数 -->
+                    </Rows>
+                    <AdditionalHull>
+                        <MaximumModuleCount>2</MaximumModuleCount><!-- 最大【船体】数 -->
+                    </AdditionalHull>
+                    <Archers>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Archers>
+                    <Scorpion>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Scorpion>
+                    <Catapult>
+                        <MaximumModuleCount>0</MaximumModuleCount>
+                    </Catapult>
+                </ShipModulesConfig>
+                <UseAssetIcon>1</UseAssetIcon>
+            </ShipModuleOwner>
+            <ItemContainer>
+                <SlotCount>10</SlotCount><!-- 最大【槽位】10个 -->
+            </ItemContainer>
+            <Craftable>
+                <CraftingTime>1800000</CraftingTime><!-- 30分钟一个 1800000-->
+            </Craftable>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>24000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>120</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2171</Ingredient>
+                        <Amount>120</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2172</Ingredient>
+                        <Amount>120</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <MetaPersistent />
+            <Health>
+                <BaseHealth>6000</BaseHealth><!-- 6000血量 -->
+            </Health>
+            <Collector />
+            <Sellable>
+                <Baseprice>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Amount>100000</Amount><!-- 卖价 -->
+                    </Item>
+                </Baseprice>
+            </Sellable>
+            <MilitaryScoreRating />
+            <Text>
+                <OasisId>2023030002</OasisId><!-- 船只名称 -->
+            </Text>
+            <TradeRouteVehicle />
+            <Infolayer />
+            <MinimapToken />
+            <FeedbackController />
+            <Locked>
+                <DefaultLockedState>0</DefaultLockedState>
+            </Locked>
+            <Nameable />
+            <QuestObject />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>77679</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <SoundEmitterCommandBarks />
+            <WorldMapSound />
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product><!-- 维护费 -->
+                        <Amount>300</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2181</Product><!-- 自由民劳动力 -->
+                        <Amount>30</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>4</ConsumerPriority>
+            </Maintenance>
+            <Leaning />
+            <ShipRenderConfiguration />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>ShipConfiguration</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101310</GUID>
+                <Name>ShipConfiguration - Container Ship - Penteconter</Name>
+            </Standard>
+            <ShipConfiguration>
+                <ShipHullGUID>2000101300</ShipHullGUID>
+                <DefaultConfigurationName>2000101300</DefaultConfigurationName>
+            </ShipConfiguration>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>ShipConfiguration</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101311</GUID>
+                <Name>ShipConfiguration - Container Ship - Trireme</Name>
+            </Standard>
+            <ShipConfiguration>
+                <ShipHullGUID>2000101301</ShipHullGUID>
+                <DefaultConfigurationName>2000101301</DefaultConfigurationName>
+            </ShipConfiguration>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>ShipConfiguration</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101312</GUID>
+                <Name>ShipConfiguration - Container Ship - Quinquereme</Name>
+            </Standard>
+            <ShipConfiguration>
+                <ShipHullGUID>2000101302</ShipHullGUID>
+                <DefaultConfigurationName>2000101302</DefaultConfigurationName>
+            </ShipConfiguration>
+        </Values>
+    </Asset>
+
+    <!-- this section wouuld replace the default civilian construction options with the container construction versions -->
+    <!--
+    <ModOp Replace="@37991/ShipConfiguration/ShipHullGUID">"
+        <ShipHullGUID>2000101300</ShipHullGUID>
+    </ModOp>
+    
+    <ModOp Replace="@37989/ShipConfiguration/ShipHullGUID">"
+        <ShipHullGUID>2000101301</ShipHullGUID>
+    </ModOp>
+
+    <ModOp Replace="@37993/ShipConfiguration/ShipHullGUID">"
+        <ShipHullGUID>2000101302</ShipHullGUID>
+    </ModOp>
+    -->
+
+    <!--    this section adds the container construction versions to the shipyard list, 
+            which is scrollable with mousewheel, even without a scrollbar -->
+    <ModOp Add="@6054/Recruitment/AssemblyOptions">
+        <Item>
+            <Vehicle>2000101310</Vehicle>
+        </Item>
+        <Item>
+            <Vehicle>2000101311</Vehicle>
+        </Item>
+        <Item>
+            <Vehicle>2000101312</Vehicle>
+        </Item>
+    </ModOp>
+
+    <!-- add the new NavalUnits to various Asset Pools -->
+    <ModOp Type="Add" GUID='38995,30827,114477,121354' Path="/Values/AssetPool/AssetList">
+        <Item>
+            <Asset>2000101300</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101301</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101302</Asset>
+        </Item>
+
+			<Item>
+				<Asset>2023030000</Asset><!-- 罗马巨型货轮 -->
+			</Item>
+
+    </ModOp>
+
+
+
+</ModOps>
+

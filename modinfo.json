@@ -1,0 +1,29 @@
+{
+   "Version": "0.1.0",
+   "Anno": 8,
+   "ModID": "container-ships-more-storage-slots-ewjax",
+   "Difficulty": "easier",
+   "GameSetup": {
+	  "RequiresNewGame": false,
+	  "SafeToRemove": true,
+	  "Multiplayer": true,
+	  "Campaign": true
+},
+   "Dependencies": {
+	  "Require": [],
+	  "Optional": [],
+	  "LoadAfter": [],
+	  "Deprecate": []
+},
+   "Category": {
+	  "English": "Content"
+},
+   "ModName": {
+	  "English": "Container Ships - More Storage Slots (ewjax)"
+},
+   "Description": {
+	  "English": "#  Container Ships - More Storage Slots \n\n This mod increases the number of storage slots on cargo ships"
+},
+   "CreatorName": "ewjax",
+   "CreatorContact": ""
+}
