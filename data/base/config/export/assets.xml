@@ -35,7 +35,6 @@
     <!--    
     Assets do not need to reside inside a ModOp, they can be defined outside any ModOp
     -->
-
     <Asset>
         <BaseAssetGUID>37222</BaseAssetGUID>
         <Values>
@@ -57,44 +56,33 @@
             <Locked>
                 <DefaultLockedState>0</DefaultLockedState>
             </Locked>
-
             <ShipModuleOwner>
                 <MaximumModificationCount>4</MaximumModificationCount>
                 <ShipModulesConfig>
                     <Mast>
-                        <ModuleAsset>39574</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <ModuleAsset>39575</ModuleAsset>
-                        <MaximumModuleCount>0</MaximumModuleCount>
+                        <MaximumModuleCount>1</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
-                        <ModuleAsset>39576</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </AdditionalHull>
                     <Archers>
-                        <ModuleAsset>39577</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Archers>
                     <Scorpion>
-                        <ModuleAsset>39578</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Scorpion>
                     <Catapult>
-                        <ModuleAsset>39579</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Catapult>
-                    <Cosmetic>
-                        <ModuleAsset>39587</ModuleAsset>
-                    </Cosmetic>
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
             <Health>
                 <BaseHealth>750</BaseHealth>
             </Health>
-
             <ItemContainer>
                 <SlotCount>6</SlotCount>
             </ItemContainer>
@@ -122,44 +110,33 @@
             <Locked>
                 <DefaultLockedState>0</DefaultLockedState>
             </Locked>
-
             <ShipModuleOwner>
                 <MaximumModificationCount>4</MaximumModificationCount>
                 <ShipModulesConfig>
                     <Mast>
-                        <ModuleAsset>39574</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <ModuleAsset>39575</ModuleAsset>
-                        <MaximumModuleCount>0</MaximumModuleCount>
+                        <MaximumModuleCount>1</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
-                        <ModuleAsset>39576</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </AdditionalHull>
                     <Archers>
-                        <ModuleAsset>39577</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Archers>
                     <Scorpion>
-                        <ModuleAsset>39578</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Scorpion>
                     <Catapult>
-                        <ModuleAsset>39579</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Catapult>
-                    <Cosmetic>
-                        <ModuleAsset>39587</ModuleAsset>
-                    </Cosmetic>
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
             <Health>
                 <BaseHealth>1875</BaseHealth>
             </Health>
-
             <ItemContainer>
                 <SlotCount>8</SlotCount>
             </ItemContainer>
@@ -187,44 +164,33 @@
             <Locked>
                 <DefaultLockedState>0</DefaultLockedState>
             </Locked>
-
             <ShipModuleOwner>
                 <MaximumModificationCount>4</MaximumModificationCount>
                 <ShipModulesConfig>
                     <Mast>
-                        <ModuleAsset>39574</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <ModuleAsset>39575</ModuleAsset>
-                        <MaximumModuleCount>0</MaximumModuleCount>
+                        <MaximumModuleCount>1</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
-                        <ModuleAsset>39576</ModuleAsset>
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </AdditionalHull>
                     <Archers>
-                        <ModuleAsset>39577</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Archers>
                     <Scorpion>
-                        <ModuleAsset>39578</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Scorpion>
                     <Catapult>
-                        <ModuleAsset>39579</ModuleAsset>
                         <MaximumModuleCount>0</MaximumModuleCount>
                     </Catapult>
-                    <Cosmetic>
-                        <ModuleAsset>39587</ModuleAsset>
-                    </Cosmetic>
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
             <Health>
                 <BaseHealth>3000</BaseHealth>
             </Health>
-
             <ItemContainer>
                 <SlotCount>10</SlotCount>
             </ItemContainer>
@@ -423,7 +389,7 @@
         </Values>
     </Asset>
 
-    <!-- this section wouuld replace the default civilian construction options with the container construction versions -->
+    <!-- this section replaces the default civilian construction options with the container construction versions -->
     <!--
     <ModOp Replace="@37991/ShipConfiguration/ShipHullGUID">"
         <ShipHullGUID>2000101300</ShipHullGUID>
