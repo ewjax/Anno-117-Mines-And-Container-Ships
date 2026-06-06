@@ -6,6 +6,20 @@
 
     GUID Registry:
 
+          GUID Registry (from Oil; Lamp mod)
+            2100200100  Product   : Oil Lamp
+            2100200101  Building  : Oil Lamp Workshop
+            2100200200  Need      : Roman Household Oil Lamps
+            2100200201  Need      : Roman Celtic Household Oil Lamps
+            2100200202  Chain     : Production Chain Roman Oil Lamps
+            2100200203  Trigger   : Unlock Oil Lamp Workshop (existing save compatibility 300)
+            2100200204  Trigger   : Unhide Oil Lamp Workshop (existing save compatibility 200)
+
+            Text LineId Registry (matches texts_english.xml)
+            2001000010  "Oil Lamp"
+            2001000011  "Oil Lamp Workshop"
+
+
 
     -->
 
@@ -35,6 +49,7 @@
     <!--    
     Assets do not need to reside inside a ModOp, they can be defined outside any ModOp
     -->
+
     <Asset>
         <BaseAssetGUID>37222</BaseAssetGUID>
         <Values>
@@ -42,6 +57,7 @@
                 <GUID>2000101300</GUID>
                 <Name>Container Ship - Pente</Name>
                 <InfoDescription>2000101300</InfoDescription>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_pente.png</IconFilename>
             </Standard>
             <Unit>
                 <Actor>
@@ -63,7 +79,7 @@
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <MaximumModuleCount>1</MaximumModuleCount>
+                        <MaximumModuleCount>2</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
                         <MaximumModuleCount>2</MaximumModuleCount>
@@ -80,6 +96,31 @@
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>3000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>30</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2171</Ingredient>
+                        <Amount>20</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2172</Ingredient>
+                        <Amount>20</Amount>
+                    </Item>
+                    <Item>
+                        <!-- todo: replace with different product -->
+                        <Ingredient>2115</Ingredient>
+                        <Amount>100</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
             <Health>
                 <BaseHealth>750</BaseHealth>
             </Health>
@@ -95,6 +136,7 @@
             <Standard>
                 <GUID>2000101301</GUID>
                 <Name>Container Ship - Trireme</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_tri.png</IconFilename>
                 <InfoDescription>2000101301</InfoDescription>
             </Standard>
             <Unit>
@@ -117,7 +159,7 @@
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <MaximumModuleCount>1</MaximumModuleCount>
+                        <MaximumModuleCount>2</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
                         <MaximumModuleCount>2</MaximumModuleCount>
@@ -134,11 +176,36 @@
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>8000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>50</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2171</Ingredient>
+                        <Amount>30</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2172</Ingredient>
+                        <Amount>30</Amount>
+                    </Item>
+                    <Item>
+                        <!-- todo: replace with different product -->
+                        <Ingredient>2115</Ingredient>
+                        <Amount>150</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
             <Health>
                 <BaseHealth>1875</BaseHealth>
             </Health>
             <ItemContainer>
-                <SlotCount>8</SlotCount>
+                <SlotCount>9</SlotCount>
             </ItemContainer>
         </Values>
     </Asset>
@@ -149,6 +216,7 @@
             <Standard>
                 <GUID>2000101302</GUID>
                 <Name>Container Ship - Quinquereme</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_quinq.png</IconFilename>
                 <InfoDescription>2000101302</InfoDescription>
             </Standard>
             <Unit>
@@ -171,7 +239,7 @@
                         <MaximumModuleCount>2</MaximumModuleCount>
                     </Mast>
                     <Rows>
-                        <MaximumModuleCount>1</MaximumModuleCount>
+                        <MaximumModuleCount>2</MaximumModuleCount>
                     </Rows>
                     <AdditionalHull>
                         <MaximumModuleCount>2</MaximumModuleCount>
@@ -188,11 +256,36 @@
                 </ShipModulesConfig>
                 <UseAssetIcon>1</UseAssetIcon>
             </ShipModuleOwner>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>16000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>80</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2171</Ingredient>
+                        <Amount>40</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2172</Ingredient>
+                        <Amount>40</Amount>
+                    </Item>
+                    <Item>
+                        <!-- todo: replace with different product -->
+                        <Ingredient>2115</Ingredient>
+                        <Amount>200</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
             <Health>
                 <BaseHealth>3000</BaseHealth>
             </Health>
             <ItemContainer>
-                <SlotCount>10</SlotCount>
+                <SlotCount>12</SlotCount>
             </ItemContainer>
         </Values>
     </Asset>
