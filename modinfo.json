@@ -1,7 +1,7 @@
 {
-   "Version": "0.1.0",
+   "Version": "0.5.0",
    "Anno": 8,
-   "ModID": "container-ships-more-storage-slots-ewjax",
+   "ModID": "mines-and-container-ships-ewjax",
    "Difficulty": "easier",
    "GameSetup": {
 	  "RequiresNewGame": false,
@@ -19,10 +19,10 @@
 	  "English": "Content"
 },
    "ModName": {
-	  "English": "Container Ships - More Storage Slots (ewjax)"
+	  "English": "Mines and Container Ships (ewjax)"
 },
    "Description": {
-	  "English": "#  Container Ships - More Storage Slots \n\n This mod increases the number of storage slots on cargo ships"
+	  "English": "#  Mine Buffs and Large Cargo Container Ships \n\n This mod provides buffs for mines and increases the number of storage slots on cargo ships"
 },
    "CreatorName": "ewjax",
    "CreatorContact": ""

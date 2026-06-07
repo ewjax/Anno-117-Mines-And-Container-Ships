@@ -4,14 +4,31 @@
 
         <Text>
             <LineId>2000101300</LineId>
-            <Text>Container Ship - Penteconter</Text>
+            <Text>Zinc Ore</Text>
         </Text>
         <Text>
             <LineId>2000101301</LineId>
-            <Text>Container Ship - Trireme</Text>
+            <Text>Mining Tools Workshop</Text>
         </Text>
         <Text>
             <LineId>2000101302</LineId>
+            <Text>Nearby Mining Tools Workshop</Text>
+        </Text>
+        <Text>
+            <LineId>2000101303</LineId>
+            <Text>Nearby Mining Tools Workshop</Text>
+        </Text>
+
+        <Text>
+            <LineId>2000101380</LineId>
+            <Text>Container Ship - Penteconter</Text>
+        </Text>
+        <Text>
+            <LineId>2000101381</LineId>
+            <Text>Container Ship - Trireme</Text>
+        </Text>
+        <Text>
+            <LineId>2000101382</LineId>
             <Text>Container Ship - Quinquereme</Text>
         </Text>
 

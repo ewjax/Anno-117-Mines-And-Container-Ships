@@ -1,30 +1,38 @@
 <ModOps>
 
-    <!-- first GUID for this mod  2000101300 -->
-
     <!--
-
     GUID Registry:
 
-          GUID Registry (from Oil; Lamp mod)
-            2100200100  Product   : Oil Lamp
-            2100200101  Building  : Oil Lamp Workshop
-            2100200200  Need      : Roman Household Oil Lamps
-            2100200201  Need      : Roman Celtic Household Oil Lamps
-            2100200202  Chain     : Production Chain Roman Oil Lamps
-            2100200203  Trigger   : Unlock Oil Lamp Workshop (existing save compatibility 300)
-            2100200204  Trigger   : Unhide Oil Lamp Workshop (existing save compatibility 200)
+    2000101300  Product     : Zinc Ore
+    2000101301  Building    : Mining Tools Workshop - Roman
+    2000101302  AOE Effect  : Nearby Mining Tools Workshop Productivity Bonus
+    2000101303  AOE Buff    : Nearby Mining Tools Workshop Productivity Bonus
 
-            Text LineId Registry (matches texts_english.xml)
-            2001000010  "Oil Lamp"
-            2001000011  "Oil Lamp Workshop"
+    2000101310  Chain       : Mining Tools Production Chain
+    2000101311  Trigger     : Unhide Mining Tools Workshop
+    2000101312  Trigger     : Unlock Mining Tools Workshop
 
 
 
-    -->
 
-    <!-- Asset ModOp workaround: use it once before you use asset modops 
-    <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
+    2000101320  Product     : Brass Bars
+    2000101321  Building    : Brass Smelter
+
+    2000101330  Product     : Corrosion-Resistant Fitting
+    2000101331  Building    : Nautical Workshop
+
+
+    2000101380  Container Ship - Pente (NavalUnit)
+    2000101381  Container Ship - Trireme (NavalUnit)
+    2000101382  Container Ship - Quinquereme (NavalUnit)
+
+    2000101390  Ship Configuration - Container Ship - Penteconter (ShipConfiguration)
+    2000101391  Ship Configuration - Container Ship - Trireme (ShipConfiguration)
+    2000101392  Ship Configuration - Container Ship - Quinquereme (ShipConfiguration)
+
+
+
+
     -->
 
     <!--
@@ -50,13 +58,583 @@
     Assets do not need to reside inside a ModOp, they can be defined outside any ModOp
     -->
 
+    <!--    
+    ==========================================================================================
+    Mining Tools Chain    
+    ==========================================================================================
+    -->
+
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101300</GUID>
+                <Name>Good Zinc Ore</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_zinc_ore.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>2000101300</OasisId>
+            </Text>
+            <Locked/>
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6904287318739488511</ProductCategory>
+                <BasePrice>5</BasePrice>
+                <AssociatedRegion>Roman;Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Roman</RegionType>
+                    </Item>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+            </Product>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101301</GUID>
+                <Name>Mining Tools Workshop - Roman</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
+                <InfoDescription>2000101301</InfoDescription>
+            </Standard>
+            <Building>
+    			<BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegion>Roman</AssociatedRegion>
+                <FunctionalEffects>
+                    <Item>
+                        <!--Nearby Mining Tools Workshop Productivity Bonus-->
+                        <FunctionalEffect>2000101302</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking/>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <!--Money-->
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <!--Good Timber-->
+                        <Amount>15</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <!--Good Tiles-->
+                        <Amount>5</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                        <!--Good Concrete-->
+                    </Item>
+                    <Item>
+                        <Ingredient>2179</Ingredient>
+                        <!--Good Marble-->
+                    </Item>
+                    <Item>
+                        <Ingredient>2152</Ingredient>
+                        <!--Good Mosaics-->
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/base/graphics/roman/buildings/production/military/weapons/military_weapons.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh/>
+            <Selection>
+                <ParticipantMessageArcheType>27082</ParticipantMessageArcheType>
+                <!--Plebeian-->
+            </Selection>
+            <Text>
+                <OasisId>2000101301</OasisId>
+            </Text>
+            <Constructable/>
+            <Locked/>
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>49696</Sound>
+                    </Item>
+                    <Item>
+                        <Sound>36353</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController/>
+            <Infolayer/>
+            <Factory7/>
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2115</Product>
+                        <!--Good Iron-->
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2000101300</Product>
+                        <Amount>0</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <NeedsFuelInput>1</NeedsFuelInput>
+                <CycleTime>90</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode/>
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <!--Money-->
+                        <Amount>16</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2184</Product>
+                        <!--Workforce Plebeians-->
+                        <Amount>5</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>780</BaseHealth>
+                <!--[ empty field / noname ]-->
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>95</DestructionWarScore>
+            </Health>
+            <Pausable/>
+            <AqueductConsumer/>
+            <IncidentInfectable>
+                <Infectable>
+                    <Tremors>
+                        <InfectionChance>0.5</InfectionChance>
+                        <BurstDistance>8</BurstDistance>
+                        <BurstCount>2</BurstCount>
+                        <BurstThresholdPercentage>95</BurstThresholdPercentage>
+                    </Tremors>
+                </Infectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable/>
+            <AttributeProvider>
+                <Attributes>
+                    <FireSafety>
+                        <Value>-2</Value>
+                    </FireSafety>
+                </Attributes>
+                <Population>1496</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>26</RadiusDistance>
+                <StreetDistance>30</StreetDistance>
+            </EffectSource>
+            <Threatable/>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101302</GUID>
+                <Name>Mining Tools Workshop Productivity Boost</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>Radius</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>2000101303</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>144801</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>2000101302</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101303</GUID>
+                <Name>Nearby Mining Tools Workshop</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>2000101303</OasisId>
+            </Text>
+            <HealthUpgrade/>
+            <BuildingUpgrade/>
+            <DistributionUpgrade/>
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade/>
+            <FactoryUpgrade>
+                <ProductivityUpgrade>
+                    <Value>50</Value>
+                    <Percental>1</Percental>
+                </ProductivityUpgrade>
+                <AdditionalOutput>
+                    <Item>
+                        <Product>2000101300</Product>
+                        <AdditionalOutputCycle>8</AdditionalOutputCycle>
+                        <Amount>1</Amount>
+                    </Item>
+                </AdditionalOutput>
+            </FactoryUpgrade>
+            <ModuleOwnerUpgrade/>
+            <MaintenanceUpgrade/>
+            <CityInstitutionUpgrade/>
+            <IncidentInfectableUpgrade/>
+            <RecruitmentUpgrade/>
+            <AqueductUpgrade/>
+            <WarehouseUpgrade/>
+            <IrrigationUpgrade/>
+        </Values>
+    </Asset>    
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101310</GUID>
+                <Name>Production Chain Mining Tools Workshop</Name>
+                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
+                <InfoDescription>-6916709012913581949</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>2000101301</Building>
+                <!--Production Military Roman Weapons-->
+                <Tier1>
+                    <Item>
+                        <Building>3070</Building>
+                        <!--Production Heavy Roman Iron-->
+                        <Tier2>
+                            <Item>
+                                <Building>2918</Building>
+                                <!--Production Mountain Roman Iron Ore-->
+                            </Item>
+                        </Tier2>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked/>
+            <Text>
+                <OasisId>2000101310</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!--========================
+        CONSTRUCTION MENU — Insert tab after Armor Chain in Military Construction menu
+        ======================== -->
+    <Group Condition="!@41368/ConstructionCategory/BuildingList/Item[Building='2000101310']">
+        <ModOp Append = "@41368/ConstructionCategory/BuildingList/Item[Building='13839']">
+            <Item>
+                <Building>2000101310</Building>
+            </Item>
+        </ModOp>
+    </Group>
+
+    <!--========================
+        UNHIDE at 200 Plebeians — Hook into vanilla trigger 3790
+        New games: makes tab appear grayed out / locked at 200 Plebeians
+        ======================== -->
+
+    <ModOp Add="@3790/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
+        <Item>
+            <Asset>2000101310</Asset>
+        </Item>
+    </ModOp>
+
+    <!--========================
+        UNLOCK at 300 Plebeians — Hook into vanilla trigger 3934
+        New games: makes tab fully unlocked and buildable at 300 Plebeians
+        ======================== -->
+
+    <ModOp Add="@3934/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
+        <Item>
+            <Asset>2000101310</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101300</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101301</Asset>
+        </Item>
+    </ModOp>
+
+    <!--========================
+        TRIGGER — Existing save compatibility at 200 Plebeians
+        Fires on load if already between 200-300 Plebeians.
+        Unhides the tab so it shows locked/grayed in the construction menu.
+        ======================== -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+        <Standard>
+            <GUID>2000101311</GUID>
+        </Standard>
+        <Trigger>
+            <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>1496</Context>
+                <CounterAmount>200</CounterAmount>
+                </ConditionPlayerCounter>
+                <ConditionLocationProps />
+                <ConditionCounterProps />
+                <ConditionPropsComparable />
+            </Values>
+            </TriggerCondition>
+            <TriggerActions>
+            <Item>
+                <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                    <UnhideAssets>
+                        <Item><Asset>2000101310</Asset></Item>
+                    </UnhideAssets>
+                    </ActionUnlockAsset>
+                </Values>
+                </TriggerAction>
+            </Item>
+            </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+        <TrackingData />
+        </Values>
+    </Asset>
+
+    <!--========================
+        TRIGGER — Existing save compatibility at 300 Plebeians
+        Fires on load if 300 Plebeians already reached.
+        ======================== -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+        <Standard>
+            <GUID>2000101312</GUID>
+        </Standard>
+        <Trigger>
+            <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>1496</Context>
+                <CounterAmount>300</CounterAmount>
+                </ConditionPlayerCounter>
+                <ConditionLocationProps />
+                <ConditionCounterProps />
+                <ConditionPropsComparable />
+            </Values>
+            </TriggerCondition>
+            <TriggerActions>
+            <Item>
+                <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                    <UnlockAssets>
+                        <Item><Asset>2000101310</Asset></Item>
+                        <Item><Asset>2000101300</Asset></Item>
+                        <Item><Asset>2000101301</Asset></Item>
+                    </UnlockAssets>
+                    </ActionUnlockAsset>
+                </Values>
+                </TriggerAction>
+            </Item>
+            </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+        <TrackingData />
+        </Values>
+    </Asset>
+
+    <!--========================
+        BUILDING REGISTRATION
+        ======================== -->
+    <!-- StarterPool Roman Any Incidentinfectable -->
+    <ModOp Add="@31973/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
+    <!-- StarterPool Roman Likely Diseases -->
+    <ModOp Add="@64666/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
+    <!-- Asset Pool All Production Buildings -->
+    <ModOp Add="@38370/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
+    <!-- CP Onboarding NoWarehouse Targets Latium -->
+    <ModOp Add="@68256/PlayerCounterContextPool/Contexts"><Item><Asset>2000101301</Asset></Item></ModOp>
+
+
+    <!--========================
+        PRODUCT LISTS
+        ======================== -->
+
+    <!-- Product List Meta All Goods -->
+    <ModOp Add="@28750/ProductList/List"><Item><Product>2000101300</Product></Item></ModOp>
+    <!-- Product List Meta Raw -->
+    <ModOp Add="@37672/ProductList/List"><Item><Product>2000101300</Product></Item></ModOp>
+
+    <!-- Product List Roman All Goods, after 2099 (Copper Ore) -->
+    <ModOp Append="@3409/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
+    <!-- Product List Celtic All Goods, after 2099 (Copper Ore) -->
+    <ModOp Append="@8497/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
+    <!-- Product List Roman Raw, after 2099 (Copper Ore) -->
+    <ModOp Append="@28754/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
+    <!-- Product List Celtic Raw, after 2099 (Copper Ore) -->
+    <ModOp Append="@29328/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
+    <!-- Product Storage List Default -->
+    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101300</Product></Item></ModOp>
+
+    <!--    
+    ==========================================================================================
+    Corrosion-Resistant Fitting Chain    
+    ==========================================================================================
+    -->
+
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101330</GUID>
+                <Name>Corrosion-Resistant Fitting</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_corrosion_resistant_fitting.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6902520759713672947</OasisId>
+            </Text>
+            <Locked/>
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6902506696591556648</ProductCategory>
+                <BasePrice>95</BasePrice>
+                <AssociatedRegion>Roman;Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Roman</RegionType>
+                    </Item>
+                </ProductionRegions>
+                <TransportGoodsType>Needs</TransportGoodsType>
+            </Product>
+        </Values>
+    </Asset>
+
     <Asset>
         <BaseAssetGUID>37222</BaseAssetGUID>
         <Values>
             <Standard>
-                <GUID>2000101300</GUID>
+                <GUID>2000101380</GUID>
                 <Name>Container Ship - Pente</Name>
-                <InfoDescription>2000101300</InfoDescription>
+                <InfoDescription>2000101380</InfoDescription>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_pente.png</IconFilename>
             </Standard>
             <Unit>
@@ -115,8 +693,7 @@
                         <Amount>20</Amount>
                     </Item>
                     <Item>
-                        <!-- todo: replace with different product -->
-                        <Ingredient>2115</Ingredient>
+                        <Ingredient>2000101330</Ingredient>
                         <Amount>100</Amount>
                     </Item>
                 </Costs>
@@ -134,10 +711,10 @@
         <BaseAssetGUID>37223</BaseAssetGUID>
         <Values>
             <Standard>
-                <GUID>2000101301</GUID>
+                <GUID>2000101381</GUID>
                 <Name>Container Ship - Trireme</Name>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_tri.png</IconFilename>
-                <InfoDescription>2000101301</InfoDescription>
+                <InfoDescription>2000101381</InfoDescription>
             </Standard>
             <Unit>
                 <Actor>
@@ -195,8 +772,7 @@
                         <Amount>30</Amount>
                     </Item>
                     <Item>
-                        <!-- todo: replace with different product -->
-                        <Ingredient>2115</Ingredient>
+                        <Ingredient>2000101330</Ingredient>
                         <Amount>150</Amount>
                     </Item>
                 </Costs>
@@ -214,10 +790,10 @@
         <BaseAssetGUID>37224</BaseAssetGUID>
         <Values>
             <Standard>
-                <GUID>2000101302</GUID>
+                <GUID>2000101382</GUID>
                 <Name>Container Ship - Quinquereme</Name>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/container_ship_quinq.png</IconFilename>
-                <InfoDescription>2000101302</InfoDescription>
+                <InfoDescription>2000101382</InfoDescription>
             </Standard>
             <Unit>
                 <Actor>
@@ -275,8 +851,7 @@
                         <Amount>40</Amount>
                     </Item>
                     <Item>
-                        <!-- todo: replace with different product -->
-                        <Ingredient>2115</Ingredient>
+                        <Ingredient>2000101330</Ingredient>
                         <Amount>200</Amount>
                     </Item>
                 </Costs>
@@ -444,12 +1019,12 @@
         <Template>ShipConfiguration</Template>
         <Values>
             <Standard>
-                <GUID>2000101310</GUID>
+                <GUID>2000101390</GUID>
                 <Name>ShipConfiguration - Container Ship - Penteconter</Name>
             </Standard>
             <ShipConfiguration>
-                <ShipHullGUID>2000101300</ShipHullGUID>
-                <DefaultConfigurationName>2000101300</DefaultConfigurationName>
+                <ShipHullGUID>2000101380</ShipHullGUID>
+                <DefaultConfigurationName>2000101380</DefaultConfigurationName>
             </ShipConfiguration>
         </Values>
     </Asset>
@@ -458,12 +1033,12 @@
         <Template>ShipConfiguration</Template>
         <Values>
             <Standard>
-                <GUID>2000101311</GUID>
+                <GUID>2000101391</GUID>
                 <Name>ShipConfiguration - Container Ship - Trireme</Name>
             </Standard>
             <ShipConfiguration>
-                <ShipHullGUID>2000101301</ShipHullGUID>
-                <DefaultConfigurationName>2000101301</DefaultConfigurationName>
+                <ShipHullGUID>2000101381</ShipHullGUID>
+                <DefaultConfigurationName>2000101381</DefaultConfigurationName>
             </ShipConfiguration>
         </Values>
     </Asset>
@@ -472,12 +1047,12 @@
         <Template>ShipConfiguration</Template>
         <Values>
             <Standard>
-                <GUID>2000101312</GUID>
+                <GUID>2000101392</GUID>
                 <Name>ShipConfiguration - Container Ship - Quinquereme</Name>
             </Standard>
             <ShipConfiguration>
-                <ShipHullGUID>2000101302</ShipHullGUID>
-                <DefaultConfigurationName>2000101302</DefaultConfigurationName>
+                <ShipHullGUID>2000101382</ShipHullGUID>
+                <DefaultConfigurationName>2000101382</DefaultConfigurationName>
             </ShipConfiguration>
         </Values>
     </Asset>
@@ -485,15 +1060,15 @@
     <!-- this section replaces the default civilian construction options with the container construction versions -->
     <!--
     <ModOp Replace="@37991/ShipConfiguration/ShipHullGUID">"
-        <ShipHullGUID>2000101300</ShipHullGUID>
+        <ShipHullGUID>2000101380</ShipHullGUID>
     </ModOp>
     
     <ModOp Replace="@37989/ShipConfiguration/ShipHullGUID">"
-        <ShipHullGUID>2000101301</ShipHullGUID>
+        <ShipHullGUID>2000101381</ShipHullGUID>
     </ModOp>
 
     <ModOp Replace="@37993/ShipConfiguration/ShipHullGUID">"
-        <ShipHullGUID>2000101302</ShipHullGUID>
+        <ShipHullGUID>2000101382</ShipHullGUID>
     </ModOp>
     -->
 
@@ -501,26 +1076,26 @@
             which is scrollable with mousewheel, even without a scrollbar -->
     <ModOp Add="@6054/Recruitment/AssemblyOptions">
         <Item>
-            <Vehicle>2000101310</Vehicle>
+            <Vehicle>2000101390</Vehicle>
         </Item>
         <Item>
-            <Vehicle>2000101311</Vehicle>
+            <Vehicle>2000101391</Vehicle>
         </Item>
         <Item>
-            <Vehicle>2000101312</Vehicle>
+            <Vehicle>2000101392</Vehicle>
         </Item>
     </ModOp>
 
     <!-- add the new NavalUnits to various Asset Pools -->
     <ModOp Type="Add" GUID='38995,30827,114477,121354' Path="/Values/AssetPool/AssetList">
         <Item>
-            <Asset>2000101300</Asset>
+            <Asset>2000101380</Asset>
         </Item>
         <Item>
-            <Asset>2000101301</Asset>
+            <Asset>2000101381</Asset>
         </Item>
         <Item>
-            <Asset>2000101302</Asset>
+            <Asset>2000101382</Asset>
         </Item>
 
 			<Item>
