@@ -323,7 +323,7 @@
     <!--========================
         CONSTRUCTION MENU — Insert tab after Armor Chain in Military Construction menu
         ======================== -->
-    <ModOp Add = "@41368/ConstructionCategory/BuildingList/">
+    <ModOp Add = "@41368/ConstructionCategory/BuildingList">
         <Item>
             <Building>2000101310</Building>
         </Item>
