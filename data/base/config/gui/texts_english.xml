@@ -6,6 +6,7 @@
             <LineId>2000101300</LineId>
             <Text>Zinc Ore</Text>
         </Text>
+        
         <Text>
             <LineId>2000101301</LineId>
             <Text>Mining Tools Workshop</Text>
@@ -18,6 +19,29 @@
             <LineId>2000101303</LineId>
             <Text>Nearby Mining Tools Workshop</Text>
         </Text>
+
+        <Text>
+            <LineId>2000101310</LineId>
+            <Text>Mining Tools Workshop Chain - Roman</Text>
+        </Text>
+
+        <Text>
+            <LineId>2000101321</LineId>
+            <Text>Mining Tools Workshop</Text>
+        </Text>
+        <Text>
+            <LineId>2000101322</LineId>
+            <Text>Nearby Mining Tools Workshop</Text>
+        </Text>
+        <Text>
+            <LineId>2000101323</LineId>
+            <Text>Nearby Mining Tools Workshop</Text>
+        </Text>
+        <Text>
+            <LineId>2000101330</LineId>
+            <Text>Mining Tools Workshop Chain - Celtic</Text>
+        </Text>
+
 
         <Text>
             <LineId>2000101380</LineId>
