@@ -35,29 +35,6 @@
 
     -->
 
-    <!--
-    use Type="Replace" or "Merge" and specify the path to the 
-    Object you want to modify, then put the modified Object in the ModOp body, 
-    you can modify any field of the Object this way, and you can also add 
-    new fields if needed, just make sure the GUID of the Object is correct 
-    and matches the one in the game data, otherwise it will create a new 
-    Object instead of modifying the existing one
-
-    Old style vs new style:
-    <ModOp Type="Merge" GUID="5473" Path="Values/Object">
-    <ModOp Merge="@5473/Object">
-        <Object>
-            <Name>New Name</Name>
-        </Object>
-    </ModOp>
-
-    -->
-
-
-    <!--    
-    Assets do not need to reside inside a ModOp, they can be defined outside any ModOp
-    -->
-
     <!--    
     ==========================================================================================
     Mining Tools Chain    
@@ -109,7 +86,7 @@
                 <AssociatedRegion>Roman</AssociatedRegion>
                 <FunctionalEffects>
                     <Item>
-                        <!--Nearby Mining Tools Workshop Productivity Bonus-->
+                        <!--Nearby Mining Tools Workshop - Effect-->
                         <FunctionalEffect>2000101302</FunctionalEffect>
                     </Item>
                 </FunctionalEffects>
@@ -119,29 +96,23 @@
                 <Costs>
                     <Item>
                         <Ingredient>1010017</Ingredient>
-                        <!--Money-->
                     </Item>
                     <Item>
                         <Ingredient>2174</Ingredient>
-                        <!--Good Timber-->
                         <Amount>15</Amount>
                     </Item>
                     <Item>
                         <Ingredient>2176</Ingredient>
-                        <!--Good Tiles-->
                         <Amount>5</Amount>
                     </Item>
                     <Item>
                         <Ingredient>2178</Ingredient>
-                        <!--Good Concrete-->
                     </Item>
                     <Item>
                         <Ingredient>2179</Ingredient>
-                        <!--Good Marble-->
                     </Item>
                     <Item>
                         <Ingredient>2152</Ingredient>
-                        <!--Good Mosaics-->
                     </Item>
                 </Costs>
             </Cost>
@@ -155,7 +126,6 @@
             <Mesh/>
             <Selection>
                 <ParticipantMessageArcheType>27082</ParticipantMessageArcheType>
-                <!--Plebeian-->
             </Selection>
             <Text>
                 <OasisId>2000101301</OasisId>
@@ -250,7 +220,6 @@
                 <FactoryInputs>
                     <Item>
                         <Product>2115</Product>
-                        <!--Good Iron-->
                         <Amount>1</Amount>
                         <StorageAmount>3</StorageAmount>
                     </Item>
@@ -275,12 +244,10 @@
                 <Maintenances>
                     <Item>
                         <Product>1010017</Product>
-                        <!--Money-->
                         <Amount>16</Amount>
                     </Item>
                     <Item>
                         <Product>2184</Product>
-                        <!--Workforce Plebeians-->
                         <Amount>5</Amount>
                     </Item>
                 </Maintenances>
@@ -288,7 +255,6 @@
             </Maintenance>
             <Health>
                 <BaseHealth>780</BaseHealth>
-                <!--[ empty field / noname ]-->
                 <SelfHealPerHealTick>1</SelfHealPerHealTick>
                 <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
                 <DestructionWarScore>95</DestructionWarScore>
@@ -434,15 +400,6 @@
             </Item>
         </ModOp>
     </Group>
-
-    <Group Condition="!@41338/ConstructionCategory/BuildingList/Item[Building='2000101310']">
-        <ModOp Append = "@41338/ConstructionCategory/BuildingList/Item[Building='80613']">
-            <Item>
-                <Building>2000101310</Building>
-            </Item>
-        </ModOp>
-    </Group>
-
 
 
     <!--========================
