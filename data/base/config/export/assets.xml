@@ -8,7 +8,7 @@
     2000101302  AOE Effect  : Nearby Mining Tools Workshop Productivity Bonus
     2000101303  AOE Buff    : Nearby Mining Tools Workshop Productivity Bonus
 
-    2000101310  Chain       : Mining Tools Production Chain
+    2000101310  Chain       : Mining Tools Production Chain - Roman
     2000101311  Trigger     : Unhide Mining Tools Workshop
     2000101312  Trigger     : Unlock Mining Tools Workshop
 
@@ -328,7 +328,7 @@
         <Values>
             <Standard>
                 <GUID>2000101302</GUID>
-                <Name>Mining Tools Workshop Productivity Boost</Name>
+                <Name>Nearby Mining Tools Workshop - Effect</Name>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
             </Standard>
             <Effect>
@@ -358,7 +358,7 @@
         <Values>
             <Standard>
                 <GUID>2000101303</GUID>
-                <Name>Nearby Mining Tools Workshop</Name>
+                <Name>Nearby Mining Tools Workshop - Buff</Name>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
             </Standard>
             <Text>
@@ -400,21 +400,18 @@
         <Values>
             <Standard>
                 <GUID>2000101310</GUID>
-                <Name>Production Chain Mining Tools Workshop</Name>
+                <Name>Production Chain Mining Tools Workshop - Roman</Name>
                 <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
                 <InfoDescription>-6916709012913581949</InfoDescription>
             </Standard>
             <ProductionChain>
                 <Building>2000101301</Building>
-                <!--Production Military Roman Weapons-->
                 <Tier1>
                     <Item>
                         <Building>3070</Building>
-                        <!--Production Heavy Roman Iron-->
                         <Tier2>
                             <Item>
                                 <Building>2918</Building>
-                                <!--Production Mountain Roman Iron Ore-->
                             </Item>
                         </Tier2>
                     </Item>
@@ -437,6 +434,16 @@
             </Item>
         </ModOp>
     </Group>
+
+    <Group Condition="!@41338/ConstructionCategory/BuildingList/Item[Building='2000101310']">
+        <ModOp Append = "@41338/ConstructionCategory/BuildingList/Item[Building='80613']">
+            <Item>
+                <Building>2000101310</Building>
+            </Item>
+        </ModOp>
+    </Group>
+
+
 
     <!--========================
         UNHIDE at 200 Plebeians — Hook into vanilla trigger 3790
@@ -564,14 +571,8 @@
     <!--========================
         BUILDING REGISTRATION
         ======================== -->
-    <!-- StarterPool Roman Any Incidentinfectable -->
-    <ModOp Add="@31973/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
-    <!-- StarterPool Roman Likely Diseases -->
-    <ModOp Add="@64666/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
     <!-- Asset Pool All Production Buildings -->
     <ModOp Add="@38370/AssetPool/AssetList"><Item><Asset>2000101301</Asset></Item></ModOp>
-    <!-- CP Onboarding NoWarehouse Targets Latium -->
-    <ModOp Add="@68256/PlayerCounterContextPool/Contexts"><Item><Asset>2000101301</Asset></Item></ModOp>
 
 
     <!--========================
@@ -593,6 +594,21 @@
     <ModOp Append="@29328/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
     <!-- Product Storage List Default -->
     <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101300</Product></Item></ModOp>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--    
     ==========================================================================================
