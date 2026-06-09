@@ -27,7 +27,6 @@
 
     2000101360  Product     : Corrosion-Resistant Fitting
     2000101361  Building    : Nautical Workshop
-    2000101370  Product     : Corrosion Resistant Fitting
 
     2000101380  Container Ship - Pente (NavalUnit)
     2000101381  Container Ship - Trireme (NavalUnit)
@@ -37,10 +36,15 @@
     2000101391  Ship Configuration - Container Ship - Trireme (ShipConfiguration)
     2000101392  Ship Configuration - Container Ship - Quinquereme (ShipConfiguration)
 
+    2000101399  Trigger     : Unlock 
 
 
 
     -->
+
+
+    <!-- Asset ModOp workaround: use it once before you use asset modops -->
+    <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
 
     <!--    
     ==========================================================================================
@@ -104,7 +108,9 @@
 
     <Include File="mining.workshop.roman.include.xml" />
 
+    <!--
     <Include File="mining.workshop.celtic.include.xml" />
+    -->
 
 
 
@@ -123,37 +129,8 @@
     -->
 
 
-    <Asset>
-        <Template>Product</Template>
-        <Values>
-            <Standard>
-                <GUID>2000101370</GUID>
-                <Name>Corrosion-Resistant Fitting</Name>
-                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_corrosion_resistant_fitting.png</IconFilename>
-            </Standard>
-            <Text>
-                <OasisId>-6902520759713672947</OasisId>
-            </Text>
-            <Locked/>
-            <Product>
-                <StorageLevel>Building</StorageLevel>
-                <ProductCategory>-6902506696591556648</ProductCategory>
-                <BasePrice>95</BasePrice>
-                <AssociatedRegion>Roman;Celtic</AssociatedRegion>
-                <ProductionRegions>
-                    <Item>
-                        <RegionType>Roman</RegionType>
-                    </Item>
-                    <Item>
-                        <RegionType>Celtic</RegionType>
-                    </Item>
-                </ProductionRegions>
-                <TransportGoodsType>Needs</TransportGoodsType>
-            </Product>
-        </Values>
-    </Asset>
 
-
+    <Include File="corrosion.resistant.fittings.include.xml" />
     <Include File="containerships.include.xml" />
 
 

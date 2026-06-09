@@ -16,7 +16,6 @@
                 <AssociatedRegion>Roman</AssociatedRegion>
                 <FunctionalEffects>
                     <Item>
-                        <!--Nearby Mining Tools Workshop - Effect-->
                         <FunctionalEffect>2000101302</FunctionalEffect>
                     </Item>
                 </FunctionalEffects>
@@ -441,6 +440,7 @@
                         <Item><Asset>2000101310</Asset></Item>
                         <Item><Asset>2000101300</Asset></Item>
                         <Item><Asset>2000101301</Asset></Item>
+                        <Item><Asset>2000101370</Asset></Item>
                     </UnlockAssets>
                     </ActionUnlockAsset>
                 </Values>

@@ -1,0 +1,332 @@
+<ModOps>
+
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101360</GUID>
+                <Name>Corrosion-Resistant Fitting</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_corrosion_resistant_fitting.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>2000101360</OasisId>
+            </Text>
+            <Locked/>
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6907709530808083984</ProductCategory>
+                <BasePrice>95</BasePrice>
+                <AssociatedRegion>Roman;Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Roman</RegionType>
+                    </Item>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+                <TransportGoodsType>Needs</TransportGoodsType>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!--
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>145229</GUID>
+                <Name>Production Household Roman Idols</Name>
+                <IconFilename>data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png</IconFilename>
+                <InfoDescription>-6909755840838443913</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6907570840259986386</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Roman</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>145320</FunctionalEffect>
+                    </Item>
+                    <Item>
+                        <FunctionalEffect>145323</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking/>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <Amount>4</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2179</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2152</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/dlc01/graphics/roman/buildings/production/household/carved_idol/carved_idol.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh/>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList/>
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27083</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6903222428997098101</OasisId>
+            </Text>
+            <Constructable/>
+            <Locked/>
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>149389</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController/>
+            <Infolayer/>
+            <Factory7/>
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>145102</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2084</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>145220</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>1</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>180</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode/>
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>28</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2185</Product>
+                        <Amount>12</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1420</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>2700000</PassiveRuinRepairTime>
+                <DestructionWarScore>210</DestructionWarScore>
+            </Health>
+            <Pausable/>
+            <AqueductConsumer/>
+            <IncidentInfectable>
+                <Infectable>
+                    <Tremors>
+                        <InfectionChance>1</InfectionChance>
+                        <BurstDistance>8</BurstDistance>
+                        <BurstCount>2</BurstCount>
+                        <BurstThresholdPercentage>95</BurstThresholdPercentage>
+                    </Tremors>
+                </Infectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable/>
+            <AttributeProvider>
+                <Population>1497</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>26</RadiusDistance>
+                <StreetDistance>30</StreetDistance>
+            </EffectSource>
+            <Threatable/>
+        </Values>
+    </Asset>
+    -->
+
+    <!--========================
+        PRODUCT LISTS
+        ======================== -->
+
+    <!-- Product List Meta All Goods -->
+    <ModOp Add="@28750/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Meta Construction -->
+    <ModOp Add="@37671/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product List Roman All Goods -->
+    <ModOp Add="@3409/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Celtic All Goods -->
+    <ModOp Add="@8497/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product List Roman Construction -->
+    <ModOp Add="@28753/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Celtic Construction -->
+    <ModOp Add="@29327/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product Storage List Default -->
+    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101360</Product></Item></ModOp>
+
+
+
+    <!-- 
+        Unlock it all at start 
+        TODO:  Change this to unlock coincident with shipyards
+    -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+        <Standard>
+            <GUID>2000101399</GUID>
+        </Standard>
+        <Trigger>
+            <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>1499</Context>
+                <CounterAmount>1</CounterAmount>
+                </ConditionPlayerCounter>
+                <ConditionLocationProps />
+                <ConditionCounterProps />
+                <ConditionPropsComparable />
+            </Values>
+            </TriggerCondition>
+            <TriggerActions>
+            <Item>
+                <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                    <UnlockAssets>
+                        <Item><Asset>2000101360</Asset></Item>
+                    </UnlockAssets>
+                    </ActionUnlockAsset>
+                </Values>
+                </TriggerAction>
+            </Item>
+            </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+        <TrackingData />
+        </Values>
+    </Asset>
+
+
+</ModOps>
