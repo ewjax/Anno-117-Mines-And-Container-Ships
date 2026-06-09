@@ -31,27 +31,20 @@
         </Values>
     </Asset>
 
-    <!--
     <Asset>
         <Template>Production</Template>
         <Values>
             <Standard>
-                <GUID>145229</GUID>
-                <Name>Production Household Roman Idols</Name>
-                <IconFilename>data/ui/fhd/dlc01/icon_content/production_goods/icon_3d_idol_goods.png</IconFilename>
-                <InfoDescription>-6909755840838443913</InfoDescription>
+                <GUID>2000101361</GUID>
+                <Name>Nautical Workshop</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_corrosion_resistant_fitting.png</IconFilename>
+                <InfoDescription>2000101361</InfoDescription>
             </Standard>
             <Building>
                 <BuildingCategoryName>-6907570840259986386</BuildingCategoryName>
                 <BuildModeRandomRotation>180</BuildModeRandomRotation>
                 <AssociatedRegions>Roman</AssociatedRegions>
                 <FunctionalEffects>
-                    <Item>
-                        <FunctionalEffect>145320</FunctionalEffect>
-                    </Item>
-                    <Item>
-                        <FunctionalEffect>145323</FunctionalEffect>
-                    </Item>
                 </FunctionalEffects>
             </Building>
             <Blocking/>
@@ -59,6 +52,7 @@
                 <Costs>
                     <Item>
                         <Ingredient>1010017</Ingredient>
+                        <Amount>50000</Amount>
                     </Item>
                     <Item>
                         <Ingredient>2174</Ingredient>
@@ -74,7 +68,6 @@
                     </Item>
                     <Item>
                         <Ingredient>2179</Ingredient>
-                        <Amount>2</Amount>
                     </Item>
                     <Item>
                         <Ingredient>2152</Ingredient>
@@ -99,7 +92,7 @@
                 <ParticipantMessageArcheType>27083</ParticipantMessageArcheType>
             </Selection>
             <Text>
-                <OasisId>-6903222428997098101</OasisId>
+                <OasisId>2000101361</OasisId>
             </Text>
             <Constructable/>
             <Locked/>
@@ -201,7 +194,7 @@
                 </FactoryInputs>
                 <FactoryOutputs>
                     <Item>
-                        <Product>145220</Product>
+                        <Product>2000101360</Product>
                         <Amount>1</Amount>
                         <StorageAmount>1</StorageAmount>
                     </Item>
@@ -256,7 +249,44 @@
             <Threatable/>
         </Values>
     </Asset>
-    -->
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101370</GUID>
+                <Name>Production Chain Corrosion Resistant Fittings Workshop</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_corrosion_resistant_fitting.png</IconFilename>
+                <InfoDescription>2000101370</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>2000101361</Building>
+                <Tier1>
+                    <Item>
+                        <Building>145102</Building>
+                    </Item>
+                    <Item>
+                        <Building>2954</Building>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked/>
+            <Text>
+                <OasisId>2000101370</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!--========================
+        CONSTRUCTION MENU — Insert tab after Sails fab
+        ======================== -->
+    <ModOp Add = "@41369/ConstructionCategory/BuildingList">
+        <Item>
+            <Building>2000101370</Building>
+        </Item>
+    </ModOp>
+
+
 
     <!--========================
         PRODUCT LISTS
@@ -316,6 +346,8 @@
                     <ActionUnlockAsset>
                     <UnlockAssets>
                         <Item><Asset>2000101360</Asset></Item>
+                        <Item><Asset>2000101361</Asset></Item>
+                        <Item><Asset>2000101370</Asset></Item>
                     </UnlockAssets>
                     </ActionUnlockAsset>
                 </Values>

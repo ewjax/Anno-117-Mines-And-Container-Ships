@@ -22,7 +22,7 @@
 
         <Text>
             <LineId>2000101310</LineId>
-            <Text>Mining Tools Workshop Chain - Roman</Text>
+            <Text>Mining Tools</Text>
         </Text>
 
         <Text>
@@ -39,11 +39,19 @@
         </Text>
         <Text>
             <LineId>2000101330</LineId>
-            <Text>Mining Tools Workshop Chain - Celtic</Text>
+            <Text>Mining Tools</Text>
         </Text>
 
         <Text>
             <LineId>2000101360</LineId>
+            <Text>Corrosion-Resistant Fittings</Text>
+        </Text>
+        <Text>
+            <LineId>2000101361</LineId>
+            <Text>Nautical Workshop</Text>
+        </Text>
+        <Text>
+            <LineId>2000101370</LineId>
             <Text>Corrosion-Resistant Fittings</Text>
         </Text>
 
