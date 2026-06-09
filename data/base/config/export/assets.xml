@@ -45,14 +45,12 @@
     -->
 
 
-    <!-- Asset ModOp workaround: use it once before you use asset modops -->
-    <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
-
     <!--    
     ==========================================================================================
     Mining Tools Chain    
     ==========================================================================================
     -->
+
 
 
     <Asset>
@@ -84,6 +82,14 @@
         </Values>
     </Asset>
 
+
+    <Include File="mining.workshop.roman.include.xml" />
+    <Include File="mining.workshop.celtic.include.xml" />
+
+    <!--
+    -->
+
+
     <!--========================
         PRODUCT LISTS
         ======================== -->
@@ -103,23 +109,6 @@
     <ModOp Append="@29328/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
     <!-- Product Storage List Default -->
     <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101300</Product></Item></ModOp>
-
-
-
-
-
-    <Include File="mining.workshop.roman.include.xml" />
-
-    <!--
-    <Include File="mining.workshop.celtic.include.xml" />
-    -->
-
-
-
-
-
-
-
 
 
 

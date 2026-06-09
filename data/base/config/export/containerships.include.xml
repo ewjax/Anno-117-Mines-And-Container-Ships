@@ -66,7 +66,7 @@
                     </Item>
                     <Item>
                         <Ingredient>2000101370</Ingredient>
-                        <Amount>100</Amount>
+                        <Amount>20</Amount>
                     </Item>
                 </Costs>
             </Cost>
@@ -145,7 +145,7 @@
                     </Item>
                     <Item>
                         <Ingredient>2000101370</Ingredient>
-                        <Amount>150</Amount>
+                        <Amount>30</Amount>
                     </Item>
                 </Costs>
             </Cost>
@@ -224,7 +224,7 @@
                     </Item>
                     <Item>
                         <Ingredient>2000101370</Ingredient>
-                        <Amount>200</Amount>
+                        <Amount>40</Amount>
                     </Item>
                 </Costs>
             </Cost>

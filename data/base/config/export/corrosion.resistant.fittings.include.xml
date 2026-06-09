@@ -22,9 +22,6 @@
                     <Item>
                         <RegionType>Roman</RegionType>
                     </Item>
-                    <Item>
-                        <RegionType>Celtic</RegionType>
-                    </Item>
                 </ProductionRegions>
                 <TransportGoodsType>Needs</TransportGoodsType>
             </Product>
@@ -278,7 +275,7 @@
     </Asset>
 
     <!--========================
-        CONSTRUCTION MENU — Insert tab after Sails fab
+        CONSTRUCTION MENU — Insert tab after Sails
         ======================== -->
     <ModOp Add = "@41369/ConstructionCategory/BuildingList">
         <Item>
@@ -310,6 +307,36 @@
     <!-- Product Storage List Default -->
     <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101360</Product></Item></ModOp>
 
+
+
+
+
+
+    <!--========================
+        UNHIDE 
+        ======================== -->
+
+    <ModOp Add="@3790/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
+        <Item>
+            <Asset>2000101370</Asset>
+        </Item>
+    </ModOp>
+
+    <!--========================
+        UNLOCK 
+        ======================== -->
+
+    <ModOp Add="@37353/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
+        <Item>
+            <Asset>2000101370</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101360</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101361</Asset>
+        </Item>
+    </ModOp>
 
 
     <!-- 

@@ -1,221 +1,7 @@
 
 <ModOps>
 
-    <Asset>
-        <Template>Production</Template>
-        <Values>
-            <Standard>
-                <GUID>2000101321</GUID>
-                <Name>Mining Tools Workshop - Celtic</Name>
-                <IconFilename>data/ewjax/ui/fhd/base/icon_content/production_goods/icon_mining_tools.png</IconFilename>
-                <InfoDescription>2000101321</InfoDescription>
-            </Standard>
-            <Building>
-                <BuildingCategoryName>-6902742099006193651</BuildingCategoryName>
-                <BuildModeRandomRotation>180</BuildModeRandomRotation>
-                <AssociatedRegions>Celtic</AssociatedRegions>
-                <FunctionalEffects>
-                    <Item>
-                        <FunctionalEffect>2000101322</FunctionalEffect>
-                    </Item>
-                </FunctionalEffects>
-            </Building>
-            <Blocking/>
-            <Cost>
-                <Costs>
-                    <Item>
-                        <Ingredient>1010017</Ingredient>
-                    </Item>
-                    <Item>
-                        <Ingredient>2174</Ingredient>
-                        <Amount>15</Amount>
-                    </Item>
-                    <Item>
-                        <Ingredient>2176</Ingredient>
-                        <Amount>5</Amount>
-                    </Item>
-                    <Item>
-                        <Ingredient>2178</Ingredient>
-                    </Item>
-                    <Item>
-                        <Ingredient>2179</Ingredient>
-                    </Item>
-                    <Item>
-                        <Ingredient>2152</Ingredient>
-                    </Item>
-                </Costs>
-            </Cost>
-            <Object>
-                <Variations>
-                    <Item>
-                        <Filename>data/base/graphics/roman_celtic/buildings/production/military/armor/military_armor.cfg</Filename>
-                    </Item>
-                </Variations>
-            </Object>
-            <Mesh/>
-            <Selection>
-                <OnSelection>
-                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                    <Values>
-                        <ActionList/>
-                    </Values>
-                </OnSelection>
-                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
-            </Selection>
-            <Text>
-                <OasisId>2000101321</OasisId>
-            </Text>
-            <Constructable/>
-            <Locked/>
-            <SoundEmitter>
-                <OBJ_Active>
-                    <Item>
-                        <VectorElement>
-                            <InheritedIndex>0</InheritedIndex>
-                        </VectorElement>
-                        <Sound>49696</Sound>
-                    </Item>
-                    <Item>
-                        <Sound>36341</Sound>
-                    </Item>
-                </OBJ_Active>
-                <OBJ_DestroyOrKill>
-                    <Item>
-                        <VectorElement>
-                            <InheritedIndex>0</InheritedIndex>
-                        </VectorElement>
-                        <Sound>51732</Sound>
-                    </Item>
-                </OBJ_DestroyOrKill>
-                <OBJ_SelfDestroy>
-                    <Item>
-                        <VectorElement>
-                            <InheritedIndex>0</InheritedIndex>
-                        </VectorElement>
-                        <Sound>51727</Sound>
-                    </Item>
-                </OBJ_SelfDestroy>
-                <ConstructionSounds>
-                    <BLD_Build>
-                        <Item>
-                            <VectorElement>
-                                <InheritedIndex>0</InheritedIndex>
-                            </VectorElement>
-                            <Sound>51718</Sound>
-                        </Item>
-                    </BLD_Build>
-                    <BLD_MoveSuccess>
-                        <Item>
-                            <VectorElement>
-                                <InheritedIndex>0</InheritedIndex>
-                            </VectorElement>
-                            <Sound>51718</Sound>
-                        </Item>
-                    </BLD_MoveSuccess>
-                </ConstructionSounds>
-                <OBJ_RuinedByCombat>
-                    <Item>
-                        <VectorElement>
-                            <InheritedIndex>0</InheritedIndex>
-                        </VectorElement>
-                        <Sound>51732</Sound>
-                    </Item>
-                </OBJ_RuinedByCombat>
-                <MultiplayerBuildingSounds>
-                    <BLD_MP_Build>
-                        <Item>
-                            <VectorElement>
-                                <InheritedIndex>0</InheritedIndex>
-                            </VectorElement>
-                            <Sound>51756</Sound>
-                        </Item>
-                    </BLD_MP_Build>
-                    <BLD_MP_MoveSuccess>
-                        <Item>
-                            <VectorElement>
-                                <InheritedIndex>0</InheritedIndex>
-                            </VectorElement>
-                            <Sound>51756</Sound>
-                        </Item>
-                    </BLD_MP_MoveSuccess>
-                    <BLD_MP_Destroy>
-                        <Item>
-                            <VectorElement>
-                                <InheritedIndex>0</InheritedIndex>
-                            </VectorElement>
-                            <Sound>51726</Sound>
-                        </Item>
-                    </BLD_MP_Destroy>
-                </MultiplayerBuildingSounds>
-            </SoundEmitter>
-            <FeedbackController/>
-            <Infolayer/>
-            <Factory7/>
-            <FactoryBase>
-                <FactoryInputs>
-                    <Item>
-                        <Product>2115</Product>
-                        <Amount>1</Amount>
-                        <StorageAmount>3</StorageAmount>
-                    </Item>
-                </FactoryInputs>
-                <FactoryOutputs>
-                    <Item>
-                        <Product>2000101300</Product>
-                        <Amount>1</Amount>
-                        <StorageAmount>2</StorageAmount>
-                    </Item>
-                </FactoryOutputs>
-                <NeedsFuelInput>1</NeedsFuelInput>
-                <CycleTime>90</CycleTime>
-                <MaxTransporterRange>30</MaxTransporterRange>
-            </FactoryBase>
-            <LogisticNode/>
-            <AmbientMoodProvider>
-                <Murmur>Workshop</Murmur>
-            </AmbientMoodProvider>
-            <Maintenance>
-                <Maintenances>
-                    <Item>
-                        <Product>1010017</Product>
-                        <Amount>16</Amount>
-                    </Item>
-                    <Item>
-                        <Product>2192</Product>
-                        <Amount>5</Amount>
-                    </Item>
-                </Maintenances>
-                <ConsumerPriority>3</ConsumerPriority>
-            </Maintenance>
-            <Health>
-                <BaseHealth>1500</BaseHealth>
-                <SelfHealPerHealTick>2</SelfHealPerHealTick>
-                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
-                <DestructionWarScore>225</DestructionWarScore>
-            </Health>
-            <Pausable/>
-            <AqueductConsumer/>
-            <IncidentInfectable>
-                <DestructionScore>100</DestructionScore>
-            </IncidentInfectable>
-            <Buffable/>
-            <AttributeProvider>
-                <Attributes>
-                    <FireSafety>
-                        <Value>-2</Value>
-                    </FireSafety>
-                </Attributes>
-                <Population>1500</Population>
-            </AttributeProvider>
-            <EffectSource>
-                <RadiusDistance>24</RadiusDistance>
-                <StreetDistance>28</StreetDistance>
-            </EffectSource>
-            <Threatable/>
-        </Values>
-    </Asset>
 
-    <!--
     <Asset>
         <Template>Production</Template>
         <Values>
@@ -226,9 +12,9 @@
                 <InfoDescription>2000101321</InfoDescription>
             </Standard>
             <Building>
-    			<BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+		    	<BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
                 <BuildModeRandomRotation>90</BuildModeRandomRotation>
-                <AssociatedRegion>Celtic</AssociatedRegion>
+                <AssociatedRegions>Celtic</AssociatedRegions>
                 <FunctionalEffects>
                     <Item>
                         <FunctionalEffect>2000101322</FunctionalEffect>
@@ -405,7 +191,7 @@
             <Health>
                 <BaseHealth>780</BaseHealth>
                 <SelfHealPerHealTick>1</SelfHealPerHealTick>
-                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+			    <PassiveRuinRepairTime>900000</PassiveRuinRepairTime>
                 <DestructionWarScore>95</DestructionWarScore>
             </Health>
             <Pausable/>
@@ -422,14 +208,10 @@
                 </Attributes>
                 <Population>1500</Population>
             </AttributeProvider>
-            <EffectSource>
-                <RadiusDistance>26</RadiusDistance>
-                <StreetDistance>30</StreetDistance>
-            </EffectSource>
+		    <EffectSource/>
             <Threatable/>
         </Values>
     </Asset>
-    -->
 
 
     <Asset>
@@ -532,6 +314,7 @@
             </Text>
         </Values>
     </Asset>
+
 
     <!--========================
         CONSTRUCTION MENU — Insert tab after Armor Chain in Military Construction menu

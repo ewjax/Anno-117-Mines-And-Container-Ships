@@ -11,9 +11,17 @@
                 <InfoDescription>2000101301</InfoDescription>
             </Standard>
             <Building>
-    			<BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+		    	<BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
                 <BuildModeRandomRotation>90</BuildModeRandomRotation>
-                <AssociatedRegion>Roman</AssociatedRegion>
+			    <AssociatedRegions>Roman</AssociatedRegions>
+                <ProductionRegions>
+				    <Item>
+					    <RegionType>Roman</RegionType>
+				    </Item>
+				    <Item>
+					    <RegionType>Celtic</RegionType>
+				    </Item>
+			    </ProductionRegions>
                 <FunctionalEffects>
                     <Item>
                         <FunctionalEffect>2000101302</FunctionalEffect>
@@ -210,10 +218,7 @@
                 </Attributes>
                 <Population>1496</Population>
             </AttributeProvider>
-            <EffectSource>
-                <RadiusDistance>26</RadiusDistance>
-                <StreetDistance>30</StreetDistance>
-            </EffectSource>
+	    	<EffectSource/>
             <Threatable/>
         </Values>
     </Asset>
