@@ -1,5 +1,63 @@
 <ModOps>
 
+    <!--
+    ==========================================================================================
+    Brass Bars (Product)
+    ========================================================================================== -->
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101350</GUID>
+                <Name>Brass Bars</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_brass.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>2000101350</OasisId>
+            </Text>
+            <Locked/>
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6907709530808083984</ProductCategory>
+                <BasePrice>95</BasePrice>
+                <AssociatedRegion>Roman;Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Roman</RegionType>
+                    </Item>
+                </ProductionRegions>
+                <TransportGoodsType>Needs</TransportGoodsType>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!-- Product List Meta All Goods -->
+    <ModOp Add="@28750/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+    <!-- Product List Meta Intermediate -->
+    <ModOp Add="@37674/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+
+    <!-- Product List Roman All Goods -->
+    <ModOp Add="@3409/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+    <!-- Product List Celtic All Goods -->
+    <ModOp Add="@8497/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+
+    <!-- Product List Roman Intermediate -->
+    <ModOp Add="@28304/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+    <!-- Product List Celtic Intermediate -->
+    <ModOp Add="@29330/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+
+    <!-- Product Storage List Default -->
+    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101350</Product></Item></ModOp>
+
+
+
+
+    <!--
+    ==========================================================================================
+    Corosion-Resistant Fittings (Product)
+    ========================================================================================== -->
+
     <Asset>
         <Template>Product</Template>
         <Values>
@@ -26,6 +84,25 @@
             </Product>
         </Values>
     </Asset>
+
+    <!-- Product List Meta All Goods -->
+    <ModOp Add="@28750/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Meta Construction -->
+    <ModOp Add="@37671/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product List Roman All Goods -->
+    <ModOp Add="@3409/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Celtic All Goods -->
+    <ModOp Add="@8497/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product List Roman Construction -->
+    <ModOp Add="@28753/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+    <!-- Product List Celtic Construction -->
+    <ModOp Add="@29327/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
+
+    <!-- Product Storage List Default -->
+    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101360</Product></Item></ModOp>
+
 
     <Asset>
         <Template>Production</Template>
@@ -259,10 +336,10 @@
                 <Building>2000101361</Building>
                 <Tier1>
                     <Item>
-                        <Building>145102</Building>
+                        <Building>2000101350</Building>
                     </Item>
                     <Item>
-                        <Building>2954</Building>
+                        <Building>145102</Building>
                     </Item>
                 </Tier1>
             </ProductionChain>
@@ -283,28 +360,6 @@
     </ModOp>
 
 
-
-    <!--========================
-        PRODUCT LISTS
-        ======================== -->
-
-    <!-- Product List Meta All Goods -->
-    <ModOp Add="@28750/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-    <!-- Product List Meta Construction -->
-    <ModOp Add="@37671/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-
-    <!-- Product List Roman All Goods -->
-    <ModOp Add="@3409/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-    <!-- Product List Celtic All Goods -->
-    <ModOp Add="@8497/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-
-    <!-- Product List Roman Construction -->
-    <ModOp Add="@28753/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-    <!-- Product List Celtic Construction -->
-    <ModOp Add="@29327/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
-
-    <!-- Product Storage List Default -->
-    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101360</Product></Item></ModOp>
 
 
 
@@ -328,6 +383,9 @@
     <ModOp Add="@37353/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
         <Item>
             <Asset>2000101370</Asset>
+        </Item>
+        <Item>
+            <Asset>2000101350</Asset>
         </Item>
         <Item>
             <Asset>2000101360</Asset>
@@ -371,6 +429,7 @@
                     <Action />
                     <ActionUnlockAsset>
                     <UnlockAssets>
+                        <Item><Asset>2000101350</Asset></Item>
                         <Item><Asset>2000101360</Asset></Item>
                         <Item><Asset>2000101361</Asset></Item>
                         <Item><Asset>2000101370</Asset></Item>
