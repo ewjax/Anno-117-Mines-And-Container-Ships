@@ -20,9 +20,6 @@
     2000101331  Trigger     : Unhide Mining Tools Workshop
     2000101332  Trigger     : Unlock Mining Tools Workshop
 
-
-
-
     2000101350  Product     : Brass Bars
     2000101351  Building    : Brass Smelter
 
@@ -38,8 +35,6 @@
     2000101390  Ship Configuration - Container Ship - Penteconter (ShipConfiguration)
     2000101391  Ship Configuration - Container Ship - Trireme (ShipConfiguration)
     2000101392  Ship Configuration - Container Ship - Quinquereme (ShipConfiguration)
-
-    2000101399  Trigger     : Unlock 
 
     ========================================================================================== -->
 
@@ -84,7 +79,7 @@
 
     <!--
     ==========================================================================================
-    PRODUCT LISTS
+    PRODUCT LISTS - Zinc
     ========================================================================================== -->
 
     <!-- Product List Meta All Goods -->
@@ -104,8 +99,6 @@
     <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101300</Product></Item></ModOp>
 
 
-
-
     <!--
     ==========================================================================================
     Corrosion-Resistant Fitting Chain    
@@ -121,6 +114,41 @@
     
     <Include File="containerships.include.xml" />
 
+
+    <!--
+    ==========================================================================================
+    CONSTRUCTION MENU — 
+        Latium / Albion Ship Menus:         41369 / 41339
+        Latium / Albion Materials Menus:    42434 / 42435
+
+    ========================================================================================== -->
+    <ModOp Add = "@42434/ConstructionCategory/BuildingList">
+        <Item><Building>2000101310</Building></Item>
+        <Item><Building>2000101370</Building></Item>
+    </ModOp>
+    <ModOp Add="@42435/ConstructionCategory/BuildingList">
+        <Item><Building>2000101330</Building></Item>
+        <Item><Building>2000101370</Building></Item>
+    </ModOp>
+
+    <!--
+    ==========================================================================================
+    TRIGGERS
+    ========================================================================================== -->
+    <Include File="triggers.include.xml" />
+
+
+    <!--
+    ==========================================================================================
+    BUILDING REGISTRATION
+    ========================================================================================== -->
+    <!-- Asset Pool All Production Buildings -->
+    <ModOp Add="@38370/AssetPool/AssetList">
+        <Item><Asset>2000101301</Asset></Item>
+        <Item><Asset>2000101321</Asset></Item>
+        <Item><Asset>2000101351</Asset></Item>
+        <Item><Asset>2000101361</Asset></Item>
+    </ModOp>
 
 </ModOps>
 

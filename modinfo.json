@@ -1,5 +1,5 @@
 {
-   "Version": "0.5.0",
+   "Version": "1.0.0",
    "Anno": 8,
    "ModID": "mines-and-container-ships-ewjax",
    "Difficulty": "easier",
@@ -12,7 +12,7 @@
    "Dependencies": {
 	  "Require": [],
 	  "Optional": [],
-	  "LoadAfter": [],
+	  "LoadAfter": ["taludas-communitybugfixmod"],
 	  "Deprecate": []
 },
    "Category": {

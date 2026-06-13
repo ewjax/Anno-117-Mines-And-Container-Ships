@@ -1,5 +1,10 @@
 <ModOps>
 
+    <!--
+    ==========================================================================================
+    Mining Tools Workshop
+    ========================================================================================== -->
+
     <Asset>
         <Template>Production</Template>
         <Values>
@@ -151,6 +156,11 @@
                         <Amount>1</Amount>
                         <StorageAmount>3</StorageAmount>
                     </Item>
+                    <Item>
+                        <Product>2077</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
                 </FactoryInputs>
                 <FactoryOutputs>
                     <Item>
@@ -299,6 +309,9 @@
                 <Building>2000101301</Building>
                 <Tier1>
                     <Item>
+                        <Building>2878</Building>
+                    </Item>
+                    <Item>
                         <Building>3070</Building>
                         <Tier2>
                             <Item>
@@ -314,156 +327,5 @@
             </Text>
         </Values>
     </Asset>
-
-    <!-- ========================
-        CONSTRUCTION MENU — Insert tab after Armor Chain in Military Construction menu
-        ======================== -->
-    <ModOp Add="@41368/ConstructionCategory/BuildingList">
-        <Item>
-            <Building>2000101310</Building>
-        </Item>
-    </ModOp>
-
-    <!-- ========================
-        UNHIDE at 200 Plebeians — Hook into vanilla trigger 3790
-        New games: makes tab appear grayed out / locked at 200 Plebeians
-        ======================== -->
-    <ModOp Add="@3790/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
-        <Item>
-            <Asset>2000101310</Asset>
-        </Item>
-    </ModOp>
-
-    <!-- ========================
-        UNLOCK at 300 Plebeians — Hook into vanilla trigger 3934
-        New games: makes tab fully unlocked and buildable at 300 Plebeians
-        ======================== -->
-    <ModOp Add="@3934/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
-        <Item>
-            <Asset>2000101310</Asset>
-        </Item>
-        <Item>
-            <Asset>2000101300</Asset>
-        </Item>
-        <Item>
-            <Asset>2000101301</Asset>
-        </Item>
-    </ModOp>
-
-    <!-- ========================
-        TRIGGER — Existing save compatibility at 200 Plebeians
-        Fires on load if already between 200-300 Plebeians.
-        Unhides the tab so it shows locked/grayed in the construction menu.
-        ======================== -->
-    <Asset>
-        <Template>TriggerIntermediateLevel</Template>
-        <Values>
-            <Standard>
-                <GUID>2000101311</GUID>
-            </Standard>
-            <Trigger>
-                <TriggerCondition>
-                    <Template>ConditionPlayerCounter</Template>
-                    <Values>
-                        <Condition />
-                        <ConditionPlayerCounter>
-                            <PlayerCounter>PopulationByLevel</PlayerCounter>
-                            <Context>1496</Context>
-                            <CounterAmount>200</CounterAmount>
-                        </ConditionPlayerCounter>
-                        <ConditionLocationProps />
-                        <ConditionCounterProps />
-                        <ConditionPropsComparable />
-                    </Values>
-                </TriggerCondition>
-                <TriggerActions>
-                    <Item>
-                        <TriggerAction>
-                            <Template>ActionUnlockAsset</Template>
-                            <Values>
-                                <Action />
-                                <ActionUnlockAsset>
-                                    <UnhideAssets>
-                                        <Item>
-                                            <Asset>2000101310</Asset>
-                                        </Item>
-                                    </UnhideAssets>
-                                </ActionUnlockAsset>
-                            </Values>
-                        </TriggerAction>
-                    </Item>
-                </TriggerActions>
-            </Trigger>
-            <TriggerSetup />
-            <TrackingData />
-        </Values>
-    </Asset>
-
-    <!-- ========================
-        TRIGGER — Existing save compatibility at 300 Plebeians
-        Fires on load if 300 Plebeians already reached.
-        ======================== -->
-    <Asset>
-        <Template>TriggerIntermediateLevel</Template>
-        <Values>
-            <Standard>
-                <GUID>2000101312</GUID>
-            </Standard>
-            <Trigger>
-                <TriggerCondition>
-                    <Template>ConditionPlayerCounter</Template>
-                    <Values>
-                        <Condition />
-                        <ConditionPlayerCounter>
-                            <PlayerCounter>PopulationByLevel</PlayerCounter>
-                            <Context>1496</Context>
-                            <CounterAmount>300</CounterAmount>
-                        </ConditionPlayerCounter>
-                        <ConditionLocationProps />
-                        <ConditionCounterProps />
-                        <ConditionPropsComparable />
-                    </Values>
-                </TriggerCondition>
-                <TriggerActions>
-                    <Item>
-                        <TriggerAction>
-                            <Template>ActionUnlockAsset</Template>
-                            <Values>
-                                <Action />
-                                <ActionUnlockAsset>
-                                    <UnlockAssets>
-                                        <Item>
-                                            <Asset>2000101310</Asset>
-                                        </Item>
-                                        <Item>
-                                            <Asset>2000101300</Asset>
-                                        </Item>
-                                        <Item>
-                                            <Asset>2000101301</Asset>
-                                        </Item>
-                                        <Item>
-                                            <Asset>2000101370</Asset>
-                                        </Item>
-                                    </UnlockAssets>
-                                </ActionUnlockAsset>
-                            </Values>
-                        </TriggerAction>
-                    </Item>
-                </TriggerActions>
-            </Trigger>
-            <TriggerSetup />
-            <TrackingData />
-        </Values>
-    </Asset>
-
-    <!-- ========================
-        BUILDING REGISTRATION
-        ======================== -->
-    <!-- Asset Pool All Production Buildings -->
-    <ModOp Add="@38370/AssetPool/AssetList">
-        <Item>
-            <Asset>2000101301</Asset>
-        </Item>
-    </ModOp>
 
 </ModOps>

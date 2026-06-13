@@ -19,7 +19,7 @@
             <Locked/>
             <Product>
                 <StorageLevel>Building</StorageLevel>
-                <ProductCategory>-6907709530808083984</ProductCategory>
+                <ProductCategory>-6914151428389020222</ProductCategory>
                 <BasePrice>95</BasePrice>
                 <AssociatedRegion>Roman;Celtic</AssociatedRegion>
                 <ProductionRegions>
@@ -43,7 +43,7 @@
     <ModOp Add="@8497/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
 
     <!-- Product List Roman Intermediate -->
-    <ModOp Add="@28304/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
+    <ModOp Add="@29304/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
     <!-- Product List Celtic Intermediate -->
     <ModOp Add="@29330/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
 
@@ -51,6 +51,156 @@
     <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101350</Product></Item></ModOp>
 
 
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>2000101351</GUID>
+                <Name>Brass Smelter</Name>
+                <IconFilename>/data/ewjax/ui/fhd/base/icon_content/production_goods/icon_brass.png</IconFilename>
+                <InfoDescription>2000101351</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6908603777948525520</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Roman</AssociatedRegions>
+                <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99122</FunctionalEffect>
+                        <!--Effect Negative Gold Building-->
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking/>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2179</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2152</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+    					<Filename>data/base/graphics/celtic/buildings/production/heavy/bronze/heavy_bronze.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh/>
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList/>
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27083</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>2000101351</OasisId>
+            </Text>
+            <Constructable/>
+            <Locked/>
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>50370</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController/>
+            <Infolayer/>
+            <Factory7/>
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2099</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2000101300</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2000101350</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <NeedsFuelInput>1</NeedsFuelInput>
+                <CycleTime>60</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode/>
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>26</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2185</Product>
+                        <Amount>10</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>850</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1800000</PassiveRuinRepairTime>
+                <DestructionWarScore>110</DestructionWarScore>
+            </Health>
+            <Pausable/>
+            <AqueductConsumer/>
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable/>
+            <AttributeProvider>
+                <Attributes>
+                    <FireSafety>
+                        <Value>-2</Value>
+                    </FireSafety>
+                </Attributes>
+                <Population>1498</Population>
+            </AttributeProvider>
+            <EffectSource/>
+            <Threatable/>
+        </Values>
+    </Asset>
 
 
     <!--
@@ -260,7 +410,7 @@
                         <StorageAmount>2</StorageAmount>
                     </Item>
                     <Item>
-                        <Product>2084</Product>
+                        <Product>2000101350</Product>
                         <Amount>1</Amount>
                         <StorageAmount>2</StorageAmount>
                     </Item>
@@ -336,10 +486,18 @@
                 <Building>2000101361</Building>
                 <Tier1>
                     <Item>
-                        <Building>2000101350</Building>
+                        <Building>145102</Building>
                     </Item>
                     <Item>
-                        <Building>145102</Building>
+                        <Building>2000101351</Building>
+                        <Tier2>
+                            <Item>
+                                <Building>5290</Building>
+                            </Item>
+                            <Item>
+                                <Building>2000101300</Building>
+                            </Item>
+                        </Tier2>
                     </Item>
                 </Tier1>
             </ProductionChain>
@@ -350,100 +508,12 @@
         </Values>
     </Asset>
 
-    <!--========================
-        CONSTRUCTION MENU — Insert tab after Sails
-        ======================== -->
-    <ModOp Add = "@41369/ConstructionCategory/BuildingList">
-        <Item>
-            <Building>2000101370</Building>
-        </Item>
-    </ModOp>
 
 
 
 
 
 
-
-
-    <!--========================
-        UNHIDE 
-        ======================== -->
-
-    <ModOp Add="@3790/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
-        <Item>
-            <Asset>2000101370</Asset>
-        </Item>
-    </ModOp>
-
-    <!--========================
-        UNLOCK 
-        ======================== -->
-
-    <ModOp Add="@37353/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
-        <Item>
-            <Asset>2000101370</Asset>
-        </Item>
-        <Item>
-            <Asset>2000101350</Asset>
-        </Item>
-        <Item>
-            <Asset>2000101360</Asset>
-        </Item>
-        <Item>
-            <Asset>2000101361</Asset>
-        </Item>
-    </ModOp>
-
-
-    <!-- 
-        Unlock it all at start 
-        TODO:  Change this to unlock coincident with shipyards
-    -->
-    <Asset>
-        <Template>TriggerIntermediateLevel</Template>
-        <Values>
-        <Standard>
-            <GUID>2000101399</GUID>
-        </Standard>
-        <Trigger>
-            <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>1499</Context>
-                <CounterAmount>1</CounterAmount>
-                </ConditionPlayerCounter>
-                <ConditionLocationProps />
-                <ConditionCounterProps />
-                <ConditionPropsComparable />
-            </Values>
-            </TriggerCondition>
-            <TriggerActions>
-            <Item>
-                <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                    <UnlockAssets>
-                        <Item><Asset>2000101350</Asset></Item>
-                        <Item><Asset>2000101360</Asset></Item>
-                        <Item><Asset>2000101361</Asset></Item>
-                        <Item><Asset>2000101370</Asset></Item>
-                    </UnlockAssets>
-                    </ActionUnlockAsset>
-                </Values>
-                </TriggerAction>
-            </Item>
-            </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
-        <TrackingData />
-        </Values>
-    </Asset>
 
 
 </ModOps>
