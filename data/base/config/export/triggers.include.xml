@@ -2,63 +2,7 @@
 
     <!--
     ==========================================================================================
-    UNHIDE Roman chains at 200 Plebeians — Hook into vanilla trigger 3790
-    New games: makes tab appear grayed out / locked at 200 Plebeians
-    ========================================================================================== -->
-    <ModOp Add="@3790/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
-        <Item><Asset>2000101310</Asset></Item>
-        <Item><Asset>2000101370</Asset></Item>
-    </ModOp>
-
-    <!--
-    ==========================================================================================
-    UNHIDE Celtic chain at 75 smiths — Hook into vanilla trigger 8070
-    New games: makes tab appear grayed out / locked at 75 Smiths, unlocks it at 150 Smiths.
-    ========================================================================================== -->
-    <ModOp Add="@8070/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets">
-        <Item><Asset>2000101330</Asset></Item>
-        <Item><Asset>2000101370</Asset></Item>
-    </ModOp>
-    
-
-q    <!--
-    ==========================================================================================
-    UNLOCK Roman chain at 300 Plebeians — Hook into vanilla trigger 3934
-    New games: makes tab fully unlocked and buildable at 300 Plebeians
-    ========================================================================================== -->
-    <ModOp Add="@3934/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
-        <Item><Asset>2000101310</Asset></Item>
-        <Item><Asset>2000101300</Asset></Item>
-        <Item><Asset>2000101301</Asset></Item>
-
-        <Item><Asset>2000101370</Asset></Item>
-        <Item><Asset>2000101350</Asset></Item>
-        <Item><Asset>2000101351</Asset></Item>
-        <Item><Asset>2000101360</Asset></Item>
-        <Item><Asset>2000101361</Asset></Item>
-    </ModOp>
-
-    <!--
-    ==========================================================================================
-    UNLOCK Celtic chain at 125 Smiths — Hook into vanilla trigger
-    New games: makes tab fully unlocked and buildable at 125 Smiths, or if player already has 125 Smiths on load
-    ========================================================================================== -->
-    <ModOp Add="@8071/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
-        <Item><Asset>2000101330</Asset></Item>
-        <Item><Asset>2000101300</Asset></Item>
-        <Item><Asset>2000101321</Asset></Item>
-
-        <Item><Asset>2000101370</Asset></Item>
-        <Item><Asset>2000101350</Asset></Item>
-        <Item><Asset>2000101351</Asset></Item>
-        <Item><Asset>2000101360</Asset></Item>
-        <Item><Asset>2000101361</Asset></Item>
-    </ModOp>
-
-
-    <!--
-    ==========================================================================================
-    UNHIDE TRIGGER — Roman Chain Existing save compatibility at 200 Plebeians
+    UNHIDE TRIGGER — Roman Chain at 200 Plebeians
     ========================================================================================== -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
@@ -105,7 +49,7 @@ q    <!--
 
     <!--
     ==========================================================================================
-    UNLOCK TRIGGER — Roman Chain Existing save compatibility at 300 Plebeians
+    UNLOCK TRIGGER — Roman Chain at 300 Plebeians
     ========================================================================================== -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
@@ -159,7 +103,7 @@ q    <!--
 
     <!--
     ==========================================================================================
-    UNHIDE TRIGGER — Celtic Chain Existing save compatibility at 75 Smiths
+    UNHIDE TRIGGER — Celtic Chain at 75 Smiths
     ========================================================================================== -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
@@ -208,7 +152,7 @@ q    <!--
     
     <!--
     ==========================================================================================
-    UNLOCK TRIGGER — Celtic Chain Existing save compatibility at 125 Smiths
+    UNLOCK TRIGGER — Celtic Chain at 125 Smiths
     ========================================================================================== -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
