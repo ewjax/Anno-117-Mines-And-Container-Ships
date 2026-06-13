@@ -419,7 +419,7 @@
                     <Item>
                         <Product>2000101360</Product>
                         <Amount>1</Amount>
-                        <StorageAmount>1</StorageAmount>
+                        <StorageAmount>4</StorageAmount>
                     </Item>
                 </FactoryOutputs>
                 <CycleTime>180</CycleTime>
