@@ -8,5 +8,7 @@ set SOURCE_DIR=%SOURCE_BASE_DIR%\%MOD_DIR%
 set DEST_DIR=%DEST_BASE_DIR%\%MOD_DIR%
 
 robocopy "%SOURCE_DIR%\data" "%DEST_DIR%\data" /mir
+robocopy "%SOURCE_DIR%\media" "%DEST_DIR%\media" /mir
 copy /u "%SOURCE_DIR%\modinfo.json" "%DEST_DIR%"
+copy /u "%SOURCE_DIR%\README.md" "%DEST_DIR%"
 
