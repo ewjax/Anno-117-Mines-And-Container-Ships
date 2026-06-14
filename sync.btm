@@ -11,4 +11,5 @@ robocopy "%SOURCE_DIR%\data" "%DEST_DIR%\data" /mir
 robocopy "%SOURCE_DIR%\media" "%DEST_DIR%\media" /mir
 copy /u "%SOURCE_DIR%\modinfo.json" "%DEST_DIR%"
 copy /u "%SOURCE_DIR%\README.md" "%DEST_DIR%"
+copy /u "%SOURCE_DIR%\banner.jpg" "%DEST_DIR%"
 
