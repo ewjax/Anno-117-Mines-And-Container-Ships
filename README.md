@@ -68,6 +68,7 @@ This mod adds several new production buildings and production chains to Anno 117
   - Nautical Workshop (new production building)
     - Inputs: Brass Bars, Obsidian
     - Outputs: Corrosion-Resistant Fittings (new product)
+    - *Note!  The volcano quest requires a certain amount of Obsidian to advance.  Beware of activating this production and using up all the Obsidian in the early game, before the volcano quest has progressed!*
 
 ### Corrosion-Resistant Fittings:
 
@@ -78,7 +79,7 @@ This mod adds several new production buildings and production chains to Anno 117
 ## Improved Shipyards
 
 ![image](media/ImprovedShipyard.jpg)
-
+*scroll down in Shipyard list to see Container Ship options*
 
 ### High-Capacity "Container Ships"
 
