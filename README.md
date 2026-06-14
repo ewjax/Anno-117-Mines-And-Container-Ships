@@ -2,7 +2,7 @@
 
 This mod adds several new production buildings and production chains to Anno 117.  The primary benefits are
 - *50% Productivity boosts to Mines and Quarries*
-- *High-capacity "Container Ships"*
+- *High-capacity "Container Ships" (6, 9, and 12 cargo slots)*
 
 ## Summary:
 
