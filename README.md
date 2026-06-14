@@ -7,10 +7,10 @@ This mod adds several new production buildings and production chains to Anno 117
 ## Summary:
 
 - Mining Tools Workshop Production Chain:  *Mine and Quarry Productivity Boost, Zinc Ore*
-  - Mining Tools Worshop (new production building)
+  - Mining Tools Workshop (new production building)
     - Inputs: Iron, Wood
     - Output: AOE buffs
-  - AOE buffs to neary mines and quarries
+  - AOE buffs to nearby mines and quarries
     - Production boost +50%
     - Additional Product, 1 ton of Zinc Ore (new product) every 8 cycles
 - Nautical Workshop Production Chain:  *Corrosion-Resistant Fittings*
