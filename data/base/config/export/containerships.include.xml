@@ -99,7 +99,7 @@
                 </OnSelection>
             </Selection>
             <Locked>
-                <DefaultLockedState>0</DefaultLockedState>
+                <DefaultLockedState>1</DefaultLockedState>
             </Locked>
             <ShipModuleOwner>
                 <MaximumModificationCount>4</MaximumModificationCount>
@@ -178,7 +178,7 @@
                 </OnSelection>
             </Selection>
             <Locked>
-                <DefaultLockedState>0</DefaultLockedState>
+                <DefaultLockedState>1</DefaultLockedState>
             </Locked>
             <ShipModuleOwner>
                 <MaximumModificationCount>4</MaximumModificationCount>
@@ -318,5 +318,20 @@
             <Asset>2000101382</Asset>
         </Item>
     </ModOp>
+
+    <!-- Add Trireme container ship to list of triremes which unlock after researching -->
+    <ModOp Add="@49877/AssetPool/AssetList">
+        <Item>
+            <Asset>2000101381</Asset>
+        </Item>
+    </ModOp>
+
+    <!-- Add Quinquireme container ship to list of quinquiremes which unlock after researching -->
+    <ModOp Add="@49878/AssetPool/AssetList">
+        <Item>
+            <Asset>2000101382</Asset>
+        </Item>
+    </ModOp>
+
 
 </ModOps>
