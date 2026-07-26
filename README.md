@@ -7,7 +7,8 @@ This mod adds several new production buildings and production chains to Anno 117
 ## TLDR Quick Start:
 - Use a *Mining Tools Workshop* near a mine or quarry to create some *Zinc Ore*
   - *Side benefit: Mine productivity boost +50%*
-- Use a *Nautical Workshop* with some Zinc and Copper (to create Brass), and Obsidian to create some *Corrosion-Resistant Fittings*
+- Use a *Brass Smelter* with some Zinc and Copper to create some *Brass*
+- Use a *Nautical Workshop* with some Brass and Obsidian to create some *Corrosion-Resistant Fittings*
 - Use an *Improved Shipyard* with some Corrosion-Resistant Fittings to create some *Container Ships*
 
 ## Longer Summary:
