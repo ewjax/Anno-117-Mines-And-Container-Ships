@@ -3,7 +3,7 @@ set MOD_DIR=[Gameplay] Mines and Container Ships (ewjax)
 set SOURCE_BASE_DIR=D:\dev\Anno-117
 set DEST_BASE_DIR=C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods
 
-# create source and destination paths
+:: create source and destination paths
 set SOURCE_DIR=%SOURCE_BASE_DIR%\%MOD_DIR%
 set DEST_DIR=%DEST_BASE_DIR%\%MOD_DIR%
 

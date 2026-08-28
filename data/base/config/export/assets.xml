@@ -95,8 +95,6 @@
     <ModOp Append="@28754/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
     <!-- Product List Celtic Raw, after 2099 (Copper Ore) -->
     <ModOp Append="@29328/ProductList/List/Item[Product='2099']"><Item><Product>2000101300</Product></Item></ModOp>
-    <!-- Product Storage List Default -->
-    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101300</Product></Item></ModOp>
 
 
     <!--

@@ -47,10 +47,6 @@
     <!-- Product List Celtic Intermediate -->
     <ModOp Add="@29330/ProductList/List"><Item><Product>2000101350</Product></Item></ModOp>
 
-    <!-- Product Storage List Default -->
-    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101350</Product></Item></ModOp>
-
-
     <Asset>
         <Template>Production</Template>
         <Values>
@@ -101,6 +97,7 @@
             <Object>
                 <Variations>
                     <Item>
+                        <!-- use the bronze smelter model for the brass smelter -->
     					<Filename>data/base/graphics/celtic/buildings/production/heavy/bronze/heavy_bronze.cfg</Filename>
                     </Item>
                 </Variations>
@@ -250,10 +247,6 @@
     <!-- Product List Celtic Construction -->
     <ModOp Add="@29327/ProductList/List"><Item><Product>2000101360</Product></Item></ModOp>
 
-    <!-- Product Storage List Default -->
-    <ModOp Add="@3415/ProductStorageList/ProductList"><Item><Product>2000101360</Product></Item></ModOp>
-
-
     <Asset>
         <Template>Production</Template>
         <Values>
@@ -300,6 +293,7 @@
             <Object>
                 <Variations>
                     <Item>
+                        <!-- use the carved idol model for the nautical workshop -->
                         <Filename>data/dlc01/graphics/roman/buildings/production/household/carved_idol/carved_idol.cfg</Filename>
                     </Item>
                 </Variations>
