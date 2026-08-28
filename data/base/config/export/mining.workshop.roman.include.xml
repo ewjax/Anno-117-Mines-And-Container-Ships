@@ -52,6 +52,7 @@
             <Object>
                 <Variations>
                     <Item>
+                        <!-- use the weapons workshop model for the mining tools workshop -->
                         <Filename>data/base/graphics/roman/buildings/production/military/weapons/military_weapons.cfg</Filename>
                     </Item>
                 </Variations>
