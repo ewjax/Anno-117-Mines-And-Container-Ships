@@ -1,8 +1,8 @@
-# Mines and Container Ships
+# Container Ships
 
 This mod adds several new production buildings and production chains to Anno 117.  The primary benefits are
-- *50% Productivity boosts to Mines and Quarries*
 - *High-capacity "Container Ships" (6, 9, and 12 cargo slots)*
+- *50% Productivity boosts to Mines and Quarries*
 
 ## TLDR Quick Start:
 - Use a *Mining Tools Workshop* near a mine or quarry to create some *Zinc Ore*
